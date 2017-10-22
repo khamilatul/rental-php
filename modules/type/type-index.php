@@ -17,7 +17,10 @@
           <?php
     require_once("database.php");
     $db=new Database();
-    $db->select('type', 'id, nama, merk_id');
+    $db->select('type',
+     'type.id, type.nama, type.merk_id, merk.nama as merk',
+     'merk ON merk.id = type.merk_id'
+    );
     $res=$db->getResult();
       if(count($res) == 0){
           echo "<b>Tidak ada data yang tersedia</b>";
@@ -26,7 +29,7 @@
           <tr>
               <td><?php echo $r['id'] ?></td>
               <td><?php echo $r['nama'] ?></td>
-              <td><?php echo $r['merk_id'] ?></td>
+              <td><?php echo $r['merk'] ?></td>
               <td>
                   <div class="small button-group">
                       <a href="?module=type-show?id=<?php echo $r['id']; ?>" class=" button">View</a>

@@ -1,3 +1,6 @@
+<?php
+require_once("database.php");
+?>
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
@@ -23,10 +26,18 @@
     <label for="merk_id" class="text-right middle">ID Merk</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="merk_id" placeholder="merk_id" required>
-  </div>
+  <select name="merk_id">
+  <?php
+    $db = new Database();
+    $db->select('merk','id, nama');
+    $res = $db->getResult();
+    foreach ($res as &$r){
+      echo "<option value=$r[id]>$r[nama]</option>";
+    }    
+  ?>
+  </select>
 </div>
-
+</div>
 <!-- Aksi -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
@@ -43,7 +54,6 @@
 </form>
 
 <?php 
-require_once("database.php");
 
 // check action submit
 if(isset($_POST['submit'])){

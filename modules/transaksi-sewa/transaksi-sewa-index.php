@@ -20,10 +20,13 @@
           <?php
     require_once("database.php");
     $db=new Database();
-    $db->select('transaksisewa', 'id, no, tglpesan, tglpinjam, tgl_kembali_rencana, jam_kembali_rencana, 
-                 tgl_kembali_realisasi, jam_kembali_realisasi, denda, kilometer_pinjam,kilometer_kembali,
-                 BBM_pinjam, BBM_kembali, kondisi_mobil_pinjam, kondisi_mobil_kembali, kerusakan, biaya_kerusakan,
-                 biaya_BBM, sopir_id, kendaraan_id, pelanggan_id, karyawan_id');
+    $db->select('transaksisewa', 'transaksisewa.id, transaksisewa.no,transaksisewa.tglpinjam, 
+                 transaksisewa.tgl_kembali_realisasi,transaksisewa.sopir_id, transaksisewa.kendaraan_id, transaksisewa.pelanggan_id, transaksisewa.karyawan_id,sopir.nama as sopir,kendaraan.no_plat as kendaraan,pelanggan.nama as pelanggan,karyawan.nama as karyawan',
+                 'sopir ON sopir.id = transaksisewa.sopir_id',
+                 'kendaraan ON kendaraan.id = transaksisewa.kendaraan_id',
+                 'pelanggan ON pelanggan.id = transaksisewa.pelanggan_id',
+                 'karyawan ON karyawan.id = transaksisewa.karyawan_id'
+                );
     $res=$db->getResult();
       if(count($res) == 0){
           echo "<b>Tidak ada data yang tersedia</b>";
@@ -33,10 +36,10 @@
               <td><?php echo $r['no'] ?></td>
               <td><?php echo $r['tglpinjam'] ?></td>
               <td><?php echo $r['tgl_kembali_realisasi'] ?></td>
-              <td><?php echo $r['sopir_id'] ?></td>
-              <td><?php echo $r['kendaraan_id'] ?></td>
-              <td><?php echo $r['pelanggan_id'] ?></td>
-              <td><?php echo $r['karyawan_id'] ?></td>
+              <td><?php echo $r['sopir'] ?></td>
+              <td><?php echo $r['kendaraan'] ?></td>
+              <td><?php echo $r['pelanggan'] ?></td>
+              <td><?php echo $r['karyawan'] ?></td>
               <td>
                   <div class="small button-group">
                       <a href="?module=transaksi-sewa-show?id=<?php echo $r['id']; ?>" class=" button">View</a>

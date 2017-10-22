@@ -1,3 +1,6 @@
+<?php
+require_once("database.php");
+?>
 <?php ob_start();?>
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
@@ -172,36 +175,75 @@
     <label for="sopir_id" class="text-right middle">ID Sopir</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="sopir_id" placeholder="sopir_id" required>
+  <select name="sopir_id">
+  <?php
+    $db = new Database();
+    $db->select('sopir','id, nama');
+    $res = $db->getResult();
+    foreach ($res as &$r){
+      echo "<option value=$r[id]>$r[nama]</option>";
+    }    
+  ?>
+  </select>
   </div>
-</div>
+  </div>
+  
 <!-- field kendaraan_id -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
     <label for="kendaraan_id" class="text-right middle">ID Kendaraan</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kendaraan_id" placeholder="kendaraan_id" required>
+  <select name="kendaraan_id">
+  <?php
+    $db = new Database();
+    $db->select('kendaraan','id, no_plat');
+    $res = $db->getResult();
+    foreach ($res as &$r){
+      echo "<option value=$r[id]>$r[no_plat]</option>";
+    }    
+  ?>
+  </select>
   </div>
-</div>
+  </div>
+
 <!-- field pelanggan_id -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
     <label for="pelanggan_id" class="text-right middle">ID Pelanggan </label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="pelanggan_id" placeholder="pelanggan_id" required>
+  <select name="pelanggan_id">
+  <?php
+    $db = new Database();
+    $db->select('pelanggan','id, nama');
+    $res = $db->getResult();
+    foreach ($res as &$r){
+      echo "<option value=$r[id]>$r[nama]</option>";
+    }    
+  ?>
+  </select>
   </div>
-</div>
+  </div>
+
 <!-- field karyawan_id -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
     <label for="karyawan_id" class="text-right middle">ID Karyawan</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="karyawan_id" placeholder="karyawan_id" required>
+  <select name="karyawan_id">
+  <?php
+    $db = new Database();
+    $db->select('karyawan','id, nama');
+    $res = $db->getResult();
+    foreach ($res as &$r){
+      echo "<option value=$r[id]>$r[nama]</option>";
+    }    
+  ?>
+  </select>
   </div>
-</div>
+  </div>
 
 <!-- Aksi -->
 <div class="grid-x grid-padding-x">
@@ -219,7 +261,6 @@
 </form>
 
 <?php 
-require_once("database.php");
 
 // check action submit
 if(isset($_POST['submit'])){
