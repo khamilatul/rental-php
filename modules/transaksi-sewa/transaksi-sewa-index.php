@@ -17,6 +17,7 @@
 		      <th>Karyawan</th>
 		      <th>Aksi</th>
 	      </tr>
+    </thead>
           <?php
     require_once("database.php");
     $db=new Database();
@@ -42,9 +43,9 @@
               <td><?php echo $r['karyawan'] ?></td>
               <td>
                   <div class="small button-group">
-                      <a href="?module=transaksi-sewa-show?id=<?php echo $r['id']; ?>" class=" button">View</a>
-                      <a href="?module=transaksi-sewa-edit?id=<?php echo $r['id']; ?>" class="secondary button">Edit</a>
-                      <a href="?module=transaksi-sewa-delete?id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
+                      <a href="?module=transaksi-sewa-show&id=<?php echo $r['id']; ?>" class=" button">View</a>
+                      <a href="?module=transaksi-sewa-edit&id=<?php echo $r['id']; ?>" class="secondary button">Edit</a>
+                      <a href="?module=transaksi-sewa-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
                   </div>
               </td>
           </tr>
