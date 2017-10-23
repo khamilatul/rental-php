@@ -10,10 +10,10 @@
 <!-- field nama -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="nama" class="text-right middle">Nama</label>
+    <label for="nama" class="text-right middle">Nama Jenis Service</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="nama" placeholder="Nama" required>
+    <input type="text" name="nama" placeholder="Nama Jenis Service" required>
   </div>
 </div>
 

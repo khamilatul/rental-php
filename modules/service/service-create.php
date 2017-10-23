@@ -5,7 +5,7 @@ require_once("database.php");
 <ul class="breadcrumbs">
   <li>
     <a href="?module=service-create?">Home</a></li>
-  <li class="disabled">Create Data service</li>
+  <li class="disabled">Create Data Service</li>
 </ul>
 </nav>
 <form action="" method="post">
@@ -16,27 +16,27 @@ require_once("database.php");
     <label for="kode_service" class="text-right middle">Kode Service</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kode_service" placeholder="kode_service" required>
+    <input type="text" name="kode_service" placeholder="Kode Service" required>
   </div>
 </div>
 
 <!-- field tgl -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="tgl" class="text-right middle">Tanggal</label>
+    <label for="tgl" class="text-right middle">Tanggal Service</label>
   </div>
   <div class="small-6 cell">
-    <input type="date" name="tgl" placeholder="tgl" required>
+    <input type="date" name="tgl" placeholder="Tanggal Service" required>
   </div>
 </div>
 
 <!-- field biaya -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="biaya" class="text-right middle">biaya</label>
+    <label for="biaya" class="text-right middle">Biaya Service</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="biaya" placeholder="biaya" required>
+    <input type="text" name="biaya" placeholder="Biaya Service" required>
   </div>
 </div>
 

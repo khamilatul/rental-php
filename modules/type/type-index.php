@@ -1,7 +1,7 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Type</li>
+    <li class="disabled">Data Type</li>
   </ul>
 </nav>
 <a href="?module=type-create" class="small button">Create</a>
@@ -9,7 +9,7 @@
       <thead>
           <tr>
 		      <th>ID</th>
-		      <th>Nama</th>
+		      <th>Nama Type</th>
 		      <th>ID merk</th>
 		      <th>Aksi</th>
 	      </tr>

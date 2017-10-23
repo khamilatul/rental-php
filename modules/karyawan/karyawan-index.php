@@ -10,9 +10,9 @@
           <tr>
 		      <th>No</th>
               <th>NIK </th>
-		      <th>Nama </th>
-		      <th>Alamat</th>
-		      <th>Telephone</th>
+		      <th>Nama Karyawan </th>
+		      <th>Alamat Karyawan</th>
+		      <th>No Telepon</th>
 		      <th>Aksi</th>
 	      </tr>
         </thead>

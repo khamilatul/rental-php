@@ -5,7 +5,7 @@ require_once("database.php");
 <ul class="breadcrumbs">
   <li>
     <a href="?module=type-create?">Home</a></li>
-  <li class="disabled">Create Data type</li>
+  <li class="disabled">Create Data Type</li>
 </ul>
 </nav>
 <form action="" method="post">
@@ -13,10 +13,10 @@ require_once("database.php");
 <!-- field nama -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="nama" class="text-right middle">Nama</label>
+    <label for="nama" class="text-right middle">Nama Type</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="nama" placeholder="Nama" required>
+    <input type="text" name="nama" placeholder="Nama Type" required>
   </div>
 </div>
 

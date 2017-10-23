@@ -5,35 +5,28 @@ require_once("database.php");
 <ul class="breadcrumbs">
   <li>
     <a href="?module=poli-create?">Home</a></li>
-  <li class="disabled">Setoran</li>
+  <li class="disabled">Create Data Setoran</li>
 </ul>
 </nav>
 <form action="" method="post">
-  <!-- field nama -->
-  <div class="grid-x grid-padding-x">
-    <div class="small-3 cell">
-      <label for="nama" class="text-right middle">Nama</label>
-    </div>
-    <div class="small-6 cell">
-      <input type="text" name="nama" placeholder="Nama" required>
-    </div>
-  </div>
+  
   <!-- field tanggal -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="tgl" class="text-right middle">Tanggal</label>
+      <label for="tgl" class="text-right middle">Tanggal Setoran</label>
     </div>
     <div class="small-6 cell">
-      <input type="date" name="tgl" placeholder="Tanggal" required>
+      <input type="date" name="tgl" placeholder="Tanggal Setoran" required>
     </div>
   </div>
+
   <!-- field jumlah -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="jumlah" class="text-right middle">Jumlah</label>
+      <label for="jumlah" class="text-right middle">Jumlah Setoran</label>
     </div>
     <div class="small-6 cell">
-      <input type="text" name="jumlah" placeholder="Jumlah" required>
+      <input type="text" name="jumlah" placeholder="Jumlah Setoran" required>
     </div>
   </div>
 

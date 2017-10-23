@@ -14,30 +14,30 @@ require_once("database.php");
 <!-- field no -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="no" class="text-right middle">Nomor</label>
+    <label for="no" class="text-right middle">Nomor Transaksi</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="no" placeholder="no" required>
+    <input type="text" name="no" placeholder="Nomor Transaksi" required>
   </div>
 </div>
 
 <!-- field tglpesan -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="tglpesan" class="text-right middle">tglpesan</label>
+    <label for="tglpesan" class="text-right middle">Tanggal Pesan</label>
   </div>
   <div class="small-6 cell">
-    <input type="date" name="tglpesan" placeholder="tglpesan" required>
+    <input type="date" name="tglpesan" placeholder="Tanggal Pesan" required>
   </div>
 </div>
 
 <!-- field tglpinjam -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="tglpinjam" class="text-right middle">tglpinjam</label>
+    <label for="tglpinjam" class="text-right middle">Tanggal Pinjam</label>
   </div>
   <div class="small-6 cell">
-    <input type="date" name="tglpinjam" placeholder="tglpinjam" required>
+    <input type="date" name="tglpinjam" placeholder="Tanggal Pinjam" required>
   </div>
 </div>
 
@@ -47,7 +47,7 @@ require_once("database.php");
     <label for="tgl_kembali_rencana" class="text-right middle">Tanggal Kembali</label>
   </div>
   <div class="small-6 cell">
-    <input type="date" name="tgl_kembali_rencana" placeholder="tgl_kembali_rencana" required>
+    <input type="date" name="tgl_kembali_rencana" placeholder="Tanggal Kembali" required>
   </div>
 </div>
 
@@ -57,7 +57,7 @@ require_once("database.php");
     <label for="jam_kembali_rencana" class="text-right middle">Jam Kembali Rencana</label>
   </div>
   <div class="small-6 cell">
-    <input type="time" name="jam_kembali_rencana" placeholder="jam_kembali_rencana" required>
+    <input type="time" name="jam_kembali_rencana" placeholder="Jam Kembali Rencana" required>
   </div>
 </div>
 
@@ -67,7 +67,7 @@ require_once("database.php");
     <label for="tgl_kembali_realisasi" class="text-right middle">Tanggal Kembali Realisasi</label>
   </div>
   <div class="small-6 cell">
-    <input type="date" name="tgl_kembali_realisasi" placeholder="tgl_kembali_realisasi" required>
+    <input type="date" name="tgl_kembali_realisasi" placeholder="Tanggal Kembali Realisasi" required>
   </div>
 </div>
 <!-- field jam_kembali_realisasi -->
@@ -76,7 +76,7 @@ require_once("database.php");
     <label for="jam_kembali_realisasi" class="text-right middle">Jam Kembali Realisasi</label>
   </div>
   <div class="small-6 cell">
-    <input type="time" name="jam_kembali_realisasi" placeholder="jam_kembali_realisasi" required>
+    <input type="time" name="jam_kembali_realisasi" placeholder="Jam Kembali Realisasi" required>
   </div>
 </div>
 <!-- field denda -->
@@ -85,7 +85,7 @@ require_once("database.php");
     <label for="denda" class="text-right middle">Denda</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="denda" placeholder="denda" required>
+    <input type="text" name="denda" placeholder="Denda" required>
   </div>
 </div>
 <!-- field kilometer_pinjam -->
@@ -94,7 +94,7 @@ require_once("database.php");
     <label for="kilometer_pinjam" class="text-right middle">Kilometer Pinjam</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kilometer_pinjam" placeholder="kilometer_pinjam" required>
+    <input type="text" name="kilometer_pinjam" placeholder="Kilometer Pinjam" required>
   </div>
 </div>
 <!-- field kilometer_kembali -->
@@ -103,7 +103,7 @@ require_once("database.php");
     <label for="kilometer_kembali" class="text-right middle">Kilometer Kembali</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kilometer_kembali" placeholder="kilometer_kembali" required>
+    <input type="text" name="kilometer_kembali" placeholder="Kilometer Kembali" required>
   </div>
 </div>
 <!-- field BBM_pinjam -->
@@ -112,7 +112,7 @@ require_once("database.php");
     <label for="BBM_pinjam" class="text-right middle">BBM Pinjam</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="BBM_pinjam" placeholder="BBM_pinjam" required>
+    <input type="text" name="BBM_pinjam" placeholder="BBM Pinjam" required>
   </div>
 </div>
 <!-- field BBM_kembali -->
@@ -121,7 +121,7 @@ require_once("database.php");
     <label for="BBM_kembali" class="text-right middle">BBM Kembali</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="BBM_kembali" placeholder="BBM_kembali" required>
+    <input type="text" name="BBM_kembali" placeholder="BBM Kembali" required>
   </div>
 </div>
 <!-- field kondisi_mobil_pinjam -->
@@ -130,7 +130,7 @@ require_once("database.php");
     <label for="kondisi_mobil_pinjam" class="text-right middle">Kondisi Mobil Pinjam</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kondisi_mobil_pinjam" placeholder="kondisi_mobil_pinjam" required>
+    <input type="text" name="kondisi_mobil_pinjam" placeholder="Kondisi Mobil Pinjam" required>
   </div>
 </div>
 <!-- field kondisi_mobil_kembali -->
@@ -139,16 +139,16 @@ require_once("database.php");
     <label for="kondisi_mobil_kembali" class="text-right middle">Kondisi Mobil Kembali</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kondisi_mobil_kembali" placeholder="kondisi_mobil_kembali" required>
+    <input type="text" name="kondisi_mobil_kembali" placeholder="Kondisi Mobil Kembali" required>
   </div>
 </div>
 <!-- field kerusakan -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="kerusakan" class="text-right middle">kerusakan</label>
+    <label for="kerusakan" class="text-right middle">Kerusakan</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kerusakan" placeholder="kerusakan" required>
+    <input type="text" name="kerusakan" placeholder="Kerusakan" required>
   </div>
 </div>
 <!-- field biaya_kerusakan -->
@@ -157,7 +157,7 @@ require_once("database.php");
     <label for="biaya_kerusakan" class="text-right middle">Biaya Kerusakan</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="biaya_kerusakan" placeholder="biaya_kerusakan" required>
+    <input type="text" name="biaya_kerusakan" placeholder="Biaya Kerusakan" required>
   </div>
 </div>
 <!-- field biaya_BBM -->
@@ -166,7 +166,7 @@ require_once("database.php");
     <label for="biaya_BBM" class="text-right middle">Biaya BBM</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="biaya_BBM" placeholder="biaya_BBM" required>
+    <input type="text" name="biaya_BBM" placeholder="Biaya BBM" required>
   </div>
 </div>
 <!-- field sopir_id -->

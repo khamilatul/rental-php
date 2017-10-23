@@ -5,7 +5,7 @@ require_once("database.php");
 <ul class="breadcrumbs">
   <li>
     <a href="?module=kendaraan-create?">Home</a></li>
-  <li class="disabled">Create Data kendaraan</li>
+  <li class="disabled">Create Data Kendaraan</li>
 </ul>
 </nav>
 <form action="" method="post">
@@ -16,7 +16,7 @@ require_once("database.php");
     <label for="no_plat" class="text-right middle">NO Plat</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="no_plat" placeholder="no_plat" required>
+    <input type="text" name="no_plat" placeholder="NO Plat" required>
   </div>
 </div>
 
@@ -26,7 +26,7 @@ require_once("database.php");
     <label for="tahun" class="text-right middle">Tahun</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="tahun" placeholder="tahun" required>
+    <input type="text" name="tahun" placeholder="Tahun" required>
   </div>
 </div>
 
@@ -36,7 +36,7 @@ require_once("database.php");
     <label for="tarif_perjam" class="text-right middle">Tarif Perjam</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="tarif_perjam" placeholder="tarif_perjam" required>
+    <input type="text" name="tarif_perjam" placeholder="Tarif Perjam" required>
   </div>
 </div>
 
@@ -46,7 +46,7 @@ require_once("database.php");
     <label for="status_rental" class="text-right middle">Status Rental</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="status_rental" placeholder="status_rental" required>
+    <input type="text" name="status_rental" placeholder="Status Rental" required>
   </div>
 </div>
 

@@ -2,7 +2,7 @@
 <ul class="breadcrumbs">
   <li>
     <a href="?module=sopir-create?">Home</a></li>
-  <li class="disabled">Create Data sopir</li>
+  <li class="disabled">Create Data Sopir</li>
 </ul>
 </nav>
 <form action="" method="post">
@@ -10,40 +10,40 @@
 <!-- field nama -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="nama" class="text-right middle">Nama</label>
+    <label for="nama" class="text-right middle">Nama Sopir</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="nama" placeholder="Nama" required>
+    <input type="text" name="nama" placeholder="Nama Sopir" required>
   </div>
 </div>
 
 <!-- field alamat -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="alamat" class="text-right middle">alamat</label>
+    <label for="alamat" class="text-right middle">Alamat Sopir</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="alamat" placeholder="alamat" required>
+    <input type="text" name="alamat" placeholder="Alamat Sopir" required>
   </div>
 </div>
 
 <!-- field telp -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="telp" class="text-right middle">telp</label>
+    <label for="telp" class="text-right middle">NO Telepon</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="telp" placeholder="telp" required>
+    <input type="text" name="telp" placeholder="NO Telepon" required>
   </div>
 </div>
 
 <!-- field no_sim -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="no_sim" class="text-right middle">ID Kendaraan</label>
+    <label for="no_sim" class="text-right middle">NO SIM</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="no_sim" placeholder="no_sim" required>
+    <input type="text" name="no_sim" placeholder="NO SIM" required>
   </div>
 </div>
 
@@ -53,7 +53,7 @@
     <label for="tarif_perjam" class="text-right middle">Tarif Perjam</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="tarif_perjam" placeholder="tarif_perjam" required>
+    <input type="text" name="tarif_perjam" placeholder="Tarif Perjam" required>
   </div>
 </div>
 

@@ -1,7 +1,7 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Setoran</li>
+    <li class="disabled">Data Setoran</li>
   </ul>
 </nav>
     <a href="?module=setoran-create" class="small button">Create</a>
@@ -10,8 +10,8 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Tanggal</th>
-            <th>Jumlah</th>
+            <th>Tanggal Setoran</th>
+            <th>Jumlah Setoran</th>
             <th>ID Pemilik</th>
             <th>ID Karyawan</th>
             <th>Aksi</th>

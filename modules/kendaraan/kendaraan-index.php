@@ -1,7 +1,7 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Kendaraan</li>
+    <li class="disabled">Data Kendaraan</li>
   </ul>
 </nav>
 <a href="?module=kendaraan-create" class="small button">Create</a>

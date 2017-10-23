@@ -1,7 +1,7 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Service</li>
+    <li class="disabled">Data Service</li>
   </ul>
 </nav>
 <a href="?module=service-create" class="small button">Create</a>
@@ -9,9 +9,9 @@
       <thead>
           <tr>
 		      <th>No</th>
-              <th>Kode</th>
-		      <th>Tanggal</th>
-		      <th>Biaya</th>
+              <th>Kode Service</th>
+		      <th>Tanggal Service</th>
+		      <th>Biaya Service</th>
 		      <th>ID Kendaraan</th>
               <th>ID Jenis Service</th>
 		      <th>Aksi</th>

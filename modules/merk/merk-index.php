@@ -1,7 +1,7 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Merk</li>
+    <li class="disabled">Data Merk</li>
   </ul>
 </nav>
 <a href="?module=merk-create" class="small button">Create</a>
@@ -10,7 +10,7 @@
           <tr>
 		      <th>No</th>
 		      <th>Kode Merk</th>
-		      <th>Nama</th>
+		      <th>Nama Merk</th>
 		      <th>Aksi</th>
 	      </tr>
      </thead>

@@ -1,7 +1,7 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Transaksi Sewa</li>
+    <li class="disabled">Data Transaksi Sewa</li>
   </ul>
 </nav>
 <a href="?module=transaksi-sewa-create" class="small button">Create</a>

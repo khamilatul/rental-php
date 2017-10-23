@@ -13,35 +13,35 @@
     <label for="nik" class="text-right middle">NIK</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="nik" placeholder="nik" required>
+    <input type="text" name="nik" placeholder="NIK" required>
   </div>
 </div>
 
 <!-- field nama -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="nama" class="text-right middle">Nama</label>
+    <label for="nama" class="text-right middle">Nama Karyawan</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="nama" placeholder="Nama" required>
+    <input type="text" name="nama" placeholder="Nama Karyawan" required>
   </div>
 </div>
 <!-- field alamat -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="alamat" class="text-right middle">alamat</label>
+    <label for="alamat" class="text-right middle">Alamat Karyawan</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="alamat" placeholder="alamat" required>
+    <input type="text" name="alamat" placeholder="Alamat Karyawan" required>
   </div>
 </div>
 <!-- field telp -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="telp" class="text-right middle">telp</label>
+    <label for="telp" class="text-right middle">No Telepon</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="telp" placeholder="telp" required>
+    <input type="text" name="telp" placeholder="No Telepon" required>
   </div>
 </div>
 

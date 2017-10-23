@@ -1,7 +1,7 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Pelanggan</li>
+    <li class="disabled">Data Pelanggan</li>
   </ul>
 </nav>
 <a href="?module=pelanggan-create" class="small button">Create</a>
@@ -10,8 +10,8 @@
           <tr>
 		      <th>No</th>
 		      <th>Nomor KTP </th>
-		      <th>Nama </th>
-		      <th>Alamat</th>
+		      <th>Nama Pelanggan</th>
+		      <th>Alamat Pelanggan</th>
 		      <th>Nomor Telepon</th>
 		      <th>Aksi</th>
 	      </tr>

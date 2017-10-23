@@ -1,17 +1,17 @@
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
-    <li class="disabled">Pemilik</li>
+    <li class="disabled">Data Pemilik</li>
   </ul>
 </nav>
 <a href="?module=pemilik-create" class="small button">Create</a>
   <table>
       <thead>
           <tr>
-		      <th>No pemilik</th>
-		      <th>Kode pemilik</th>
-		      <th>Nama pemilik</th>
-		      <th>Alamat pemilik</th>
+		      <th>No Pemilik</th>
+		      <th>Kode Pemilik</th>
+		      <th>Nama Pemilik</th>
+		      <th>Alamat Pemilik</th>
 		      <th>Kendaraan ID</th>
 		      <th>Aksi</th>
 	      </tr>

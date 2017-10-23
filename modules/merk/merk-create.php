@@ -2,7 +2,7 @@
 <ul class="breadcrumbs">
   <li>
     <a href="?module=merk-create?">Home</a></li>
-  <li class="disabled">Create Data merk</li>
+  <li class="disabled">Create Data Merk</li>
 </ul>
 </nav>
 <form action="" method="post">
@@ -13,7 +13,7 @@
     <label for="kode_merk" class="text-right middle">Kode Merk</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="kode_merk" placeholder="kode_merk" required>
+    <input type="text" name="kode_merk" placeholder="Kode Merk" required>
   </div>
 </div>
 
@@ -23,7 +23,7 @@
     <label for="nama" class="text-right middle">Nama Merk</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="nama" placeholder="Nama" required>
+    <input type="text" name="nama" placeholder="Nama Merk" required>
   </div>
 </div>
 
