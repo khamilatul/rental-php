@@ -6,15 +6,6 @@
 </ul>
 </nav>
 <form action="" method="post">
-<!-- field no -->
-<div class="grid-x grid-padding-x">
-  <div class="small-3 cell">
-    <label for="id" class="text-right middle">id</label>
-  </div>
-  <div class="small-6 cell">
-    <input type="text" name="id" placeholder="id" required>
-  </div>
-</div>
 
 <!-- field nama -->
 <div class="grid-x grid-padding-x">
