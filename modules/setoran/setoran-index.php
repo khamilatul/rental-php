@@ -39,9 +39,9 @@
               <td><?php echo $r['karyawan'] ?></td>
               <td>
                   <div class="small button-group">
-                      <a href="?module=setoran-show?id=<?php echo $r['id']; ?>" class=" button">View</a>
-                      <a href="?module=setoran-edit?id=<?php echo $r['id']; ?>" class="secondary button">Edit</a>
-                      <a href="?module=setoran-delete?id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
+                      <a href="?module=setoran-show&id=<?php echo $r['id']; ?>" class=" button">View</a>
+                      <a href="?module=setoran-edit&id=<?php echo $r['id']; ?>" class="secondary button">Edit</a>
+                      <a href="?module=setoran-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
                   </div>
               </td>
           </tr>
