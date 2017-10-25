@@ -44,10 +44,10 @@ require_once("database.php");
 <!-- field tgl_kembali_rencana -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="tgl_kembali_rencana" class="text-right middle">Tanggal Kembali</label>
+    <label for="tgl_kembali_rencana" class="text-right middle">Tanggal Kembali Rencana</label>
   </div>
   <div class="small-6 cell">
-    <input type="date" name="tgl_kembali_rencana" placeholder="Tanggal Kembali" required>
+    <input type="date" name="tgl_kembali_rencana" placeholder="Tanggal Kembali Rencana" required>
   </div>
 </div>
 

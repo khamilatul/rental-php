@@ -23,7 +23,7 @@ switch($module) {
         include 'modules/pelanggan/pelanggan-delete.php';
     break;
     case 'pelanggan-show':
-        include 'modules/pelanggan/pelanggan-edit.php';
+        include 'modules/pelanggan/pelanggan-show.php';
     break;
 
 
@@ -41,7 +41,7 @@ switch($module) {
         include 'modules/karyawan/karyawan-delete.php';
     break;
     case 'karyawan-show':
-        include 'modules/karyawan/karyawan-edit.php';
+        include 'modules/karyawan/karyawan-show.php';
     break;  
 
     // Module Kendaraan
@@ -58,7 +58,7 @@ switch($module) {
         include 'modules/kendaraan/kendaraan-delete.php';
     break;
     case 'kendaraan-show':
-        include 'modules/kendaraan/kendaraan-edit.php';
+        include 'modules/kendaraan/kendaraan-show.php';
     break;
 
     // Module Service
@@ -75,7 +75,7 @@ switch($module) {
         include 'modules/service/service-delete.php';
     break;
     case 'service-show':
-        include 'modules/service/service-edit.php';
+        include 'modules/service/service-show.php';
     break;
     
     // Module Jenis Service
@@ -92,7 +92,7 @@ switch($module) {
         include 'modules/jenis-service/jenis-service-delete.php';
     break;
     case 'jenis-service-show':
-        include 'modules/jenis-service/jenis-service-edit.php';
+        include 'modules/jenis-service/jenis-service-show.php';
     break;  
 
     // Module Type
@@ -109,7 +109,7 @@ switch($module) {
         include 'modules/type/type-delete.php';
     break;
     case 'type-show':
-        include 'modules/type/type-edit.php';
+        include 'modules/type/type-show.php';
     break;  
 
     // Module Merk
@@ -126,7 +126,7 @@ switch($module) {
         include 'modules/merk/merk-delete.php';
     break;
     case 'merk-show':
-        include 'modules/merk/merk-edit.php';
+        include 'modules/merk/merk-show.php';
     break;  
 
     
@@ -144,7 +144,7 @@ switch($module) {
         include 'modules/setoran/setoran-delete.php';
     break;
     case 'setoran-show':
-        include 'modules/setoran/setoran-edit.php';
+        include 'modules/setoran/setoran-show.php';
     break;  
   
 
@@ -162,7 +162,7 @@ switch($module) {
         include 'modules/pemilik/pemilik-delete.php';
     break;
     case 'pemilik-show':
-        include 'modules/pemilik/pemilik-edit.php';
+        include 'modules/pemilik/pemilik-show.php';
     break;  
   
 
@@ -180,7 +180,7 @@ switch($module) {
          include 'modules/sopir/sopir-delete.php';
      break;
      case 'sopir-show':
-         include 'modules/sopir/sopir-edit.php';
+         include 'modules/sopir/sopir-show.php';
      break;  
 
      // Module Transaksi Sewa
@@ -197,7 +197,7 @@ switch($module) {
          include 'modules/transaksi-sewa/transaksi-sewa-delete.php';
      break;
      case 'transaksi-sewa-show':
-         include 'modules/transaksi-sewa/transaksi-sewa-edit.php';
+         include 'modules/transaksi-sewa/transaksi-sewa-show.php';
      break;  
 
     // Jika module tidak ditemukan maka di redirect ke home 

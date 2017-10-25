@@ -14,45 +14,45 @@ if(count($res) == 0){
 <ul class="breadcrumbs">
   <li>
     <a href="?module=pelanggan-edit?">Home</a></li>
-  <li class="disabled">Data Edit pelanggan</li>
+  <li class="disabled">Edit Data Pelanggan</li>
 </ul>
 </nav>
 <form action="" method="post">
  <!-- field no_ktp -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="no_ktp" class="text-right middle">no_ktp</label>
+      <label for="no_ktp" class="text-right middle">NO KTP</label>
     </div>
     <div class="small-6 cell">
       <input type="hidden" name="id" value="<?php echo $r['id']; ?>">
-      <input type="text" name="no_ktp" placeholder="no_ktp" value="<?php echo $r['no_ktp']; ?>" required>
+      <input type="text" name="no_ktp" placeholder="NO KTP" value="<?php echo $r['no_ktp']; ?>" required>
     </div>
   </div>
   <!-- field nama -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="nama" class="text-right middle">Nama</label>
+      <label for="nama" class="text-right middle">Nama Pelanggan</label>
     </div>
     <div class="small-6 cell">
-      <input type="text" name="nama" placeholder="Nama" value="<?php echo $r['nama']; ?>" required>
+      <input type="text" name="nama" placeholder="Nama Pelanggan" value="<?php echo $r['nama']; ?>" required>
     </div>
   </div>
   <!-- field alamat -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="alamat" class="text-right middle">Alamat</label>
+      <label for="alamat" class="text-right middle">Alamat Pelanggan</label>
     </div>
     <div class="small-6 cell">
-      <input type="text" name="alamat" placeholder="Alamat" value="<?php echo $r['alamat']; ?>" required>
+      <input type="text" name="alamat" placeholder="Alamat Pelanggan" value="<?php echo $r['alamat']; ?>" required>
     </div>
   </div>
   <!-- field telp -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="telp" class="text-right middle">Telphone</label>
+      <label for="telp" class="text-right middle">No Telepon</label>
     </div>
     <div class="small-6 cell">
-      <input type="text" name="telp" placeholder="Telphone" value="<?php echo $r['telp']; ?>" required>
+      <input type="text" name="telp" placeholder="No Telepon" value="<?php echo $r['telp']; ?>" required>
     </div>
   </div>
   <!-- Aksi -->

@@ -14,18 +14,18 @@ if(count($res) == 0){
 <ul class="breadcrumbs">
   <li>
     <a href="?module=jenis-service-edit?">Home</a></li>
-  <li class="disabled">Data Edit jenis-service</li>
+  <li class="disabled">Edit Data Jenis Service</li>
 </ul>
 </nav>
 <form action="" method="post">
   <!-- field nama -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="nama" class="text-right middle">Nama</label>
+      <label for="nama" class="text-right middle">Nama Jenis Service</label>
     </div>
     <div class="small-6 cell">
     <input type="hidden" name="id" value="<?php echo $r['id']; ?>">
-      <input type="text" name="nama" placeholder="Nama" value="<?php echo $r['nama']; ?>" required>
+      <input type="text" name="nama" placeholder="Nama Jenis Service" value="<?php echo $r['nama']; ?>" required>
     </div>
   </div>
   <!-- Aksi -->

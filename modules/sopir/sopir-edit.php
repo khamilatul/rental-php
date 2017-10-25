@@ -14,7 +14,7 @@ if(count($res) == 0){
 <ul class="breadcrumbs">
   <li>
     <a href="?module=sopir-edit?">Home</a></li>
-  <li class="disabled">Data Edit sopir</li>
+  <li class="disabled">Edit Data Sopir</li>
 </ul>
 </nav>
 <form action="" method="post">
@@ -22,30 +22,30 @@ if(count($res) == 0){
   <!-- field nama -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="nama" class="text-right middle">Nama</label>
+      <label for="nama" class="text-right middle">Nama Sopir</label>
     </div>
     <div class="small-6 cell">
-      <input type="text" name="nama" placeholder="Nama" value="<?php echo $r['nama']; ?>" required>
+      <input type="text" name="nama" placeholder="Nama Sopir" value="<?php echo $r['nama']; ?>" required>
     </div>
   </div>
 
   <!-- field alamat -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="alamat" class="text-right middle">Alamat</label>
+      <label for="alamat" class="text-right middle">Alamat Sopir</label>
     </div>
     <div class="small-6 cell">
-      <input type="text" name="alamat" placeholder="Alamat" value="<?php echo $r['alamat']; ?>" required>
+      <input type="text" name="alamat" placeholder="Alamat Sopir" value="<?php echo $r['alamat']; ?>" required>
     </div>
   </div>
 
   <!-- field telp -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="telp" class="text-right middle">Telphone</label>
+      <label for="telp" class="text-right middle">No Telepon</label>
     </div>
     <div class="small-6 cell">
-      <input type="text" name="telp" placeholder="Telphone" value="<?php echo $r['telp']; ?>" required>
+      <input type="text" name="telp" placeholder="No Telepon" value="<?php echo $r['telp']; ?>" required>
     </div>
   </div>
 
