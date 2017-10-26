@@ -1,8 +1,8 @@
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
-  <li>
-    <a href="?module=pelanggan-create?">Home</a></li>
-  <li class="disabled">Create Data Pelanggan</li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=pelanggan">Pelanggan</a></li>
+    <li class="disabled">Create Data Pelanggan</li>
 </ul>
 </nav>
 <form action="" method="post">

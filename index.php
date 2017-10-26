@@ -25,10 +25,10 @@ if($_SESSION['status'] !="login"){
     
     <div class="grid-container fluid">
       <div class="grid-x grid-margin-x" id="content">
-        <div class="medium-8 cell">
+        <div class="medium-8 cell card">
           <?php include 'content.php'; ?>
         </div>
-        <div class="medium-4 cell">
+        <div class="medium-4 cell card">
           <?php include 'includes/sidebar.php'; ?>
         </div>
       </div>
@@ -38,6 +38,24 @@ if($_SESSION['status'] !="login"){
     <script src="js/vendor/foundation.js"></script>
     <script>
       $(document).foundation();
+      
+      $(document).ready(function(){
+          var pathname = window.location.search;
+          console.log('url path =>',pathname);
+          switch (pathname) {
+              case '?module=pelanggan':
+              case '?module=pelanggan-create':
+                  $('#pelanggan').addClass('is-active');
+                  break; 
+              case '?module=karyawan':
+              case '?module=karyawan-create':
+                  $('#pelanggan').removeClass('is-active');
+                  $('#karyawan').addClass('active');
+                  break; 
+              default: 
+                  text = "Looking forward to the Weekend";
+          }
+      });
     </script>
   </body>
 </html>
