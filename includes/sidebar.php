@@ -7,7 +7,7 @@
                     <ul class="nested vertical menu">
                         <li id="pelanggan"><a href="?module=pelanggan" aria-label="pelanggan">Pelanggan</a></li>
                         <li id="karyawan"><a href="?module=karyawan" aria-label="karyawan">Karyawan</a></li>
-                        <li id=""><a href="?module=sopir" aria-label="sopir">Sopir</a></li>
+                        <li id="sopir"><a href="?module=sopir" aria-label="sopir">Sopir</a></li>
                         <li id=""><a href="?module=merk" aria-label="merk">Merk</a></li>
                         <li id=""><a href="?module=jenis-service" aria-label="jenis-service">Jenis Service</a></li>
                     </ul>

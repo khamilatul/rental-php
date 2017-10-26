@@ -49,8 +49,11 @@ if($_SESSION['status'] !="login"){
                   break; 
               case '?module=karyawan':
               case '?module=karyawan-create':
-                  $('#pelanggan').removeClass('is-active');
                   $('#karyawan').addClass('active');
+                  break; 
+              case '?module=sopir':
+              case '?module=sopir-create':
+                  $('#sopir').addClass('active');
                   break; 
               default: 
                   text = "Looking forward to the Weekend";
