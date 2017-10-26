@@ -4,12 +4,9 @@
           <li class="menu-text">Khamilatul Zahro</li>
         </ul>
       </div>
-      <!--<div class="top-bar-right">
+      <div class="top-bar-right">
         <ul class="menu">
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
+          <li><a href="logout.php">Logout</a></li>
         </ul>
-      </div>-->
+      </div>
     </div>
