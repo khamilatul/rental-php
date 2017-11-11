@@ -4,7 +4,8 @@ require_once("database.php");
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=pemilik-create?">Home</a></li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=pemilik">Pemilik</a></li>
   <li class="disabled">Create Data Pemilik</li>
 </ul>
 </nav>

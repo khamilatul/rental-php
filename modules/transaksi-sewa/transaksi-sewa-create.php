@@ -5,10 +5,10 @@ require_once("database.php");
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=transaksi-sewa-create-create?">Home</a></li>
-  <li class="disabled">Create Data transaksi Sewa</li>
-</ul>
-</nav>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=transaksi-sewa">Transaksi Sewa</a></li>
+  <li class="disabled">Create Data Transaksi Sewa</li>
+</ul></nav>
 <form action="" method="post">
 
 <!-- field no -->

@@ -4,7 +4,8 @@ require_once("database.php");
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=service-create?">Home</a></li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=service">Service</a></li>
   <li class="disabled">Create Data Service</li>
 </ul>
 </nav>

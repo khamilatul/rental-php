@@ -30,100 +30,88 @@ if(count($res) == 0){ ?>
 <table>
   <tbody>
 <tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
+  <td>NO Transaksi Sewa :</td>
+  <td><?php echo $r['no']; ?></td>
 </tr>
 <tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
+  <td>Tanggal Pesan :</td>
+  <td><?php echo $r['tglpesan']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td>Tanggal Pinjam :</td>
+  <td><?php echo $r['tglpinjam']; ?></td>
 </tr>
 <tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
+  <td>Tanggal Kembali Rencana :</td>
+  <td><?php echo $r['tgl_kembali_rencana']; ?></td>
 </tr>
 <tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
+  <td>Jam Kembali Rencana :</td>
+  <td><?php echo $r['jam_kembali_rencana']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td>Tanggal Kembali Realisasi :</td>
+  <td><?php echo $r['tgl_kembali_realisasi']; ?></td>
 </tr>
 <tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
+  <td>Jam Kembali realisasi :</td>
+  <td><?php echo $r['jam_kembali_realisasi']; ?></td>
 </tr>
 <tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
+  <td>Denda :</td>
+  <td><?php echo $r['denda']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td>Kilometer Pinjam :</td>
+  <td><?php echo $r['kilometer_pinjam']; ?></td>
 </tr>
 <tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
+  <td>Kilometer Kembali :</td>
+  <td><?php echo $r['kilometer_kembali']; ?></td>
 </tr>
 <tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
+  <td>BBM Pinjam :</td>
+  <td><?php echo $r['BBM_pinjam']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td>BBM Kembali :</td>
+  <td><?php echo $r['BBM_kembali']; ?></td>
 </tr>
 <tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
+  <td>Kondisi Mobil Pinjam :</td>
+  <td><?php echo $r['kondisi_mobil_pinjam']; ?></td>
 </tr>
 <tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
+  <td>Kondisi Mobil Kembali  :</td>
+  <td><?php echo $r['kondisi_mobil_kembali']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td>Kerusakan :</td>
+  <td><?php echo $r['kerusakan']; ?></td>
 </tr>
 <tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
+  <td>Biaya Kerusakan :</td>
+  <td><?php echo $r['biaya_kerusakan']; ?></td>
 </tr>
 <tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
+  <td>Biaya BBM :</td>
+  <td><?php echo $r['biaya_BBM']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td>Sopir ID :</td>
+  <td><?php echo $r['sopir_id']; ?></td>
 </tr>
 <tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
+  <td>Kendaraan ID :</td>
+  <td><?php echo $r['kendaraan_id']; ?></td>
 </tr>
 <tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
+  <td>Pelanggan ID :</td>
+  <td><?php echo $r['pelanggan_id']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
-</tr>
-<tr>
-  <td>ID transaksi_sewa :</td>
-  <td><?php echo $r['id']; ?></td>
-</tr>
-<tr>
-  <td>Nama transaksi_sewa :</td>
-  <td><?php echo $r['nama']; ?></td>
-</tr>
-<tr>
-  <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td>Karyawan ID :</td>
+  <td><?php echo $r['karyawan_id']; ?></td>
 </tr>
   </tbody>
 </table>

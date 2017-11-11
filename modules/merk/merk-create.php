@@ -1,7 +1,8 @@
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=merk-create?">Home</a></li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=merk">Merk</a></li>
   <li class="disabled">Create Data Merk</li>
 </ul>
 </nav>

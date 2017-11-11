@@ -4,10 +4,10 @@ require_once("database.php");
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=kendaraan-create?">Home</a></li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=kendaraan">Kendaraan</a></li>
   <li class="disabled">Create Data Kendaraan</li>
-</ul>
-</nav>
+</ul></nav>
 <form action="" method="post">
 
 <!-- field no_plat -->

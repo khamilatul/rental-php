@@ -4,7 +4,8 @@ require_once("database.php");
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=poli-create?">Home</a></li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=setoran">Setoran</a></li>
   <li class="disabled">Create Data Setoran</li>
 </ul>
 </nav>

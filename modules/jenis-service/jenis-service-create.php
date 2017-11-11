@@ -1,7 +1,8 @@
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=jenis-service-create?">Home</a></li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=jenis-service">Jenis Service</a></li>
   <li class="disabled">Create Data Jenis Service</li>
 </ul>
 </nav>

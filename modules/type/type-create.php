@@ -4,7 +4,8 @@ require_once("database.php");
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=type-create?">Home</a></li>
+  <li><a href="?module=home">Home</a></li>
+  <li><a href="?module=type">Type</a></li>
   <li class="disabled">Create Data Type</li>
 </ul>
 </nav>

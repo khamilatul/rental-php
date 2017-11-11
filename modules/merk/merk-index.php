@@ -1,9 +1,11 @@
-<nav aria-label="You are here:" role="navigation">
+<div class="grid-container">
+ <nav aria-label="You are here:" role="navigation" style="margin-top: 20px;">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
     <li class="disabled">Data Merk</li>
   </ul>
 </nav>
+<div class="grid-x grid-margin-x">
 <a href="?module=merk-create" class="small button">Create</a>
   <table>
       <thead>
@@ -40,3 +42,5 @@
             }
             ?>
 </table>
+</div>
+</div>

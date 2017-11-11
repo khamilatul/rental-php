@@ -1,9 +1,12 @@
+<div class="grid-container">
+<nav aria-label="You are here:" role="navigation" style="margin-top: 20px;">
 <nav aria-label="You are here:" role="navigation">
   <ul class="breadcrumbs">
     <li><a href="?module=home">Home</a></li>
     <li class="disabled">Data Type</li>
   </ul>
 </nav>
+<div class="grid-x grid-margin-x">
 <a href="?module=type-create" class="small button">Create</a>
   <table>
       <thead>
@@ -43,3 +46,5 @@
             }
             ?>
 </table>
+</div>
+</div>
