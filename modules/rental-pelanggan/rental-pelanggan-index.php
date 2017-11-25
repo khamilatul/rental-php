@@ -38,8 +38,8 @@
               <td><?php echo $r['no'] ?></td>
               <td><?php echo $r['tglpesan'] ?></td>
               <td><?php echo $r['tglpinjam'] ?></td>
-              <td><?php echo $r['kendaraan_id'] ?></td>
-              <td><?php echo $r['pelanggan_id'] ?></td>
+              <td><?php echo $r['kendaraan'] ?></td>
+              <td><?php echo $r['pelanggan'] ?></td>
               <td>
                   <div class="small button-group">
                       <a href="?module=rental-pelanggan-kembali&id=<?php echo $r['id']; ?>" class=" button">Pengembalian</a>

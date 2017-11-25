@@ -14,8 +14,42 @@ ob_start();
 <?php
 $id=$_GET['id'];
 $db = new Database();
-$db->select('transaksisewa','*','','','','', "id=$id");
+$db->select('transaksisewa', 
+'transaksisewa.id, 
+transaksisewa.no,
+transaksisewa.tglpinjam,
+transaksisewa.tglpesan,
+transaksisewa.kendaraan_id,
+transaksisewa.pelanggan_id,
+transaksisewa.tgl_kembali_rencana,
+transaksisewa.tgl_kembali_realisasi,
+transaksisewa.jam_kembali_rencana,
+transaksisewa.jam_kembali_realisasi,
+transaksisewa.denda,
+transaksisewa.kilometer_pinjam,
+transaksisewa.kilometer_kembali,
+transaksisewa.BBM_pinjam,
+transaksisewa.BBM_kembali,
+transaksisewa.kondisi_mobil_pinjam,
+transaksisewa.kondisi_mobil_kembali,
+transaksisewa.kerusakan,
+transaksisewa.biaya_kerusakan,
+transaksisewa.biaya_BBM,
+transaksisewa.sopir_id, 
+transaksisewa.kendaraan_id,
+transaksisewa.pelanggan_id, 
+transaksisewa.karyawan_id,
+sopir.nama as sopir,
+kendaraan.no_plat as kendaraan,
+pelanggan.nama as pelanggan,
+karyawan.nama as karyawan',
+'sopir ON sopir.id = transaksisewa.sopir_id',
+'kendaraan ON kendaraan.id = transaksisewa.kendaraan_id',
+'pelanggan ON pelanggan.id = transaksisewa.pelanggan_id',
+'karyawan ON karyawan.id = transaksisewa.karyawan_id' , "transaksisewa.id=$id"
+);
 $res= $db->getResult();
+// print_r($res);
 if(count($res) == 0){ ?>
   <table>
     <tbody>
@@ -27,10 +61,10 @@ if(count($res) == 0){ ?>
 <?php }else{
   foreach ($res as &$r){ 
 ?>
-<table>
+<table id="print-area" class="table1">
   <tbody>
-<tr>
-  <td>NO Transaksi Sewa :</td>
+  <tr>
+  <td>Nomor Transaksi Sewa :</td>
   <td><?php echo $r['no']; ?></td>
 </tr>
 <tr>
@@ -42,10 +76,6 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['tglpinjam']; ?></td>
 </tr>
 <tr>
-  <td>Jam Pinjam :</td>
-  <td><?php echo $r['jampinjam']; ?></td>
-</tr>
-<tr>
   <td>Tanggal Kembali Rencana :</td>
   <td><?php echo $r['tgl_kembali_rencana']; ?></td>
 </tr>
@@ -54,16 +84,48 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['jam_kembali_rencana']; ?></td>
 </tr>
 <tr>
+  <td>Tanggal Kembali Realisasi :</td>
+  <td><?php echo $r['tgl_kembali_realisasi']; ?></td>
+</tr>
+<tr>
+  <td>Jam Kembali realisasi :</td>
+  <td><?php echo $r['jam_kembali_realisasi']; ?></td>
+</tr>
+<tr>
+  <td>Denda :</td>
+  <td><?php echo $r['denda']; ?></td>
+</tr>
+<tr>
   <td>Kilometer Pinjam :</td>
   <td><?php echo $r['kilometer_pinjam']; ?></td>
+</tr>
+<tr>
+  <td>Kilometer Kembali :</td>
+  <td><?php echo $r['kilometer_kembali']; ?></td>
 </tr>
 <tr>
   <td>BBM Pinjam :</td>
   <td><?php echo $r['BBM_pinjam']; ?></td>
 </tr>
 <tr>
+  <td>BBM Kembali :</td>
+  <td><?php echo $r['BBM_kembali']; ?></td>
+</tr>
+<tr>
   <td>Kondisi Mobil Pinjam :</td>
   <td><?php echo $r['kondisi_mobil_pinjam']; ?></td>
+</tr>
+<tr>
+  <td>Kondisi Mobil Kembali  :</td>
+  <td><?php echo $r['kondisi_mobil_kembali']; ?></td>
+</tr>
+<tr>
+  <td>Kerusakan :</td>
+  <td><?php echo $r['kerusakan']; ?></td>
+</tr>
+<tr>
+  <td>Biaya Kerusakan :</td>
+  <td><?php echo $r['biaya_kerusakan']; ?></td>
 </tr>
 <tr>
   <td>Biaya BBM :</td>
@@ -71,23 +133,89 @@ if(count($res) == 0){ ?>
 </tr>
 <tr>
   <td>Sopir ID :</td>
-  <td><?php echo $r['sopir_id']; ?></td>
+  <td><?php echo $r['sopir']; ?></td>
 </tr>
 <tr>
   <td>Kendaraan ID :</td>
-  <td><?php echo $r['kendaraan_id']; ?></td>
+  <td><?php echo $r['kendaraan']; ?></td>
 </tr>
 <tr>
   <td>Pelanggan ID :</td>
-  <td><?php echo $r['pelanggan_id']; ?></td>
+  <td><?php echo $r['pelanggan']; ?></td>
 </tr>
 <tr>
   <td>Karyawan ID :</td>
-  <td><?php echo $r['karyawan_id']; ?></td>
+  <td><?php echo $r['karyawan']; ?></td>
 </tr>
   </tbody>
 </table>
+<a class="button" href="javascript:printDiv('print-area');" >Print</a>
 <a href="?module=rental-pelanggan-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
 <a class="button" href='javascript:self.history.back();'>Kembali</a>
 </div>
 <?php }}?>
+
+<style>
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+      height: 100%;
+      width: 100%;
+  }
+  div.row > div {
+    display: inline-block;  
+    border: solid 1px #ccc;
+    margin: 0.1cm;
+    font-size: 1rem;
+  }
+  div.row {
+    display: block;
+    margin: solid 2px black;
+    margin: 0.2cm 1cm;
+    font-size: 0;
+    white-space: nowrap;
+  }
+  .table1 {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #f2f5f7;
+}
+
+.table1 tr th{
+    background: #35A9DB;
+    color: #fff;
+    font-weight: normal;
+}
+
+.table1, th, td {
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.table1 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+}
+</style>
+
+<iframe id="printing-frame" name="print_frame" src="about:blank" style="display:none;"></iframe>
+
+<script type="text/javascript">
+     
+     function printDiv(elementId) {
+    var a = document.getElementById('print-area').value;
+    var b = document.getElementById(elementId).innerHTML;
+    window.frames["print_frame"].document.title = document.title;
+    window.frames["print_frame"].document.body.innerHTML = '<style>' + a + '</style>' + b;
+    window.frames["print_frame"].window.focus();
+    window.frames["print_frame"].window.print();
+}
+</script>

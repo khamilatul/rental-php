@@ -13,12 +13,19 @@ require_once("database.php");
 
 <!-- field no -->
 <div class="grid-x grid-padding-x">
-  <div class="small-3 cell">
-    <label for="no" class="text-right middle">Nomor Transaksi</label>
-  </div>
-  <div class="small-6 cell">
-    <input type="text" name="no" placeholder="Nomor Transaksi" required>
-  </div>
+<div class="small-3 cell">
+  <label for="no" class="text-right middle">Nomor Transaksi Sewa</label>
+</div>
+<div class="small-6 cell">
+<?php
+  $db = new Database();
+  $db->selectMax('transaksisewa','id');
+  $res = $db->getResult();
+  $no = $res[0]['max'] < 1 ? $res[0]['max']+1  : $res[0]['max']+1;
+  $value = 'TRX00'.$no;
+  echo "<input type='text' name='no' value='$value' placeholder='Nomor Transaksi Sewa' readonly>";
+?>
+</div>
 </div>
 
 <!-- field tglpesan -->

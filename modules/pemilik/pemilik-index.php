@@ -13,6 +13,7 @@
 		      <th>Kode Pemilik</th>
 		      <th>Nama Pemilik</th>
 		      <th>Alamat Pemilik</th>
+              <th>Telepon Pemilik</th>
 		      <th>Kendaraan ID</th>
 		      <th>Aksi</th>
 	      </tr>
