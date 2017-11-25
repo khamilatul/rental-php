@@ -30,7 +30,7 @@ if(count($res) == 0){ ?>
 <table>
   <tbody>
     <tr>
-      <td>NIK :</td>
+      <td width="200px">NIK :</td>
       <td><?php echo $r['nik']; ?></td>
     </tr>
     <tr>

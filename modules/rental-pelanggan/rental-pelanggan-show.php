@@ -6,15 +6,15 @@ ob_start();
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
-    <a href="?module=transaksi-sewa?">Home</a></li>
-  <li class="disabled">Detail Transaksi Sewa</li>
+    <a href="?module=rental-pelanggan?">Home</a></li>
+  <li class="disabled">Detail Rental Pelanggan</li>
 </ul>
 </nav>
 <div class="grid-x grid-padding-x">
 <?php
 $id=$_GET['id'];
 $db = new Database();
-$db->select('transaksi_sewa','*','','','','', "id=$id");
+$db->select('transaksisewa','*','','','','', "id=$id");
 $res= $db->getResult();
 if(count($res) == 0){ ?>
   <table>
@@ -42,6 +42,10 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['tglpinjam']; ?></td>
 </tr>
 <tr>
+  <td>Jam Pinjam :</td>
+  <td><?php echo $r['jampinjam']; ?></td>
+</tr>
+<tr>
   <td>Tanggal Kembali Rencana :</td>
   <td><?php echo $r['tgl_kembali_rencana']; ?></td>
 </tr>
@@ -50,48 +54,16 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['jam_kembali_rencana']; ?></td>
 </tr>
 <tr>
-  <td>Tanggal Kembali Realisasi :</td>
-  <td><?php echo $r['tgl_kembali_realisasi']; ?></td>
-</tr>
-<tr>
-  <td>Jam Kembali realisasi :</td>
-  <td><?php echo $r['jam_kembali_realisasi']; ?></td>
-</tr>
-<tr>
-  <td>Denda :</td>
-  <td><?php echo $r['denda']; ?></td>
-</tr>
-<tr>
   <td>Kilometer Pinjam :</td>
   <td><?php echo $r['kilometer_pinjam']; ?></td>
-</tr>
-<tr>
-  <td>Kilometer Kembali :</td>
-  <td><?php echo $r['kilometer_kembali']; ?></td>
 </tr>
 <tr>
   <td>BBM Pinjam :</td>
   <td><?php echo $r['BBM_pinjam']; ?></td>
 </tr>
 <tr>
-  <td>BBM Kembali :</td>
-  <td><?php echo $r['BBM_kembali']; ?></td>
-</tr>
-<tr>
   <td>Kondisi Mobil Pinjam :</td>
   <td><?php echo $r['kondisi_mobil_pinjam']; ?></td>
-</tr>
-<tr>
-  <td>Kondisi Mobil Kembali  :</td>
-  <td><?php echo $r['kondisi_mobil_kembali']; ?></td>
-</tr>
-<tr>
-  <td>Kerusakan :</td>
-  <td><?php echo $r['kerusakan']; ?></td>
-</tr>
-<tr>
-  <td>Biaya Kerusakan :</td>
-  <td><?php echo $r['biaya_kerusakan']; ?></td>
 </tr>
 <tr>
   <td>Biaya BBM :</td>
@@ -115,7 +87,7 @@ if(count($res) == 0){ ?>
 </tr>
   </tbody>
 </table>
-<a href="?module=transaksi-sewa-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
+<a href="?module=rental-pelanggan-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
 <a class="button" href='javascript:self.history.back();'>Kembali</a>
 </div>
 <?php }}?>

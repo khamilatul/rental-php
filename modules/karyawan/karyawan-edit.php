@@ -26,7 +26,7 @@ if(count($res) == 0){
     </div>
     <div class="small-6 cell">
       <input type="hidden" name="id" value="<?php echo $r['id']; ?>">
-      <input type="text" name="nik" placeholder="NIK" value="<?php echo $r['nik']; ?>" required>
+      <input type="text" name="nik" placeholder="NIK" value="<?php echo $r['nik']; ?>" readonly>
     </div>
   </div>
   <!-- field nama -->

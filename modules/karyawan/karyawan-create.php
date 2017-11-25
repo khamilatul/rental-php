@@ -1,3 +1,4 @@
+<?php require_once("database.php"); ?>
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
@@ -14,7 +15,14 @@
     <label for="nik" class="text-right middle">NIK</label>
   </div>
   <div class="small-6 cell">
-    <input type="text" name="nik" placeholder="NIK" required>
+  <?php
+    $db = new Database();
+    $db->selectMax('karyawan','id');
+    $res = $db->getResult();
+    $nik = $res[0]['max'] < 1 ? $res[0]['max']+1  : $res[0]['max']+1;
+    $value = 'KR000'.$nik;
+    echo "<input type='text' name='nik' value='$value' placeholder='NIK' readonly>";
+  ?>
   </div>
 </div>
 
@@ -62,7 +70,6 @@
 </form>
 
 <?php 
-require_once("database.php");
 
 // check action submit
 if(isset($_POST['submit'])){

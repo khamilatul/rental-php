@@ -10,7 +10,6 @@
   <table>
       <thead>
           <tr>
-		      <th>No</th>
               <th>NIK </th>
 		      <th>Nama Karyawan </th>
 		      <th>Alamat Karyawan</th>
@@ -23,12 +22,12 @@
     $db=new Database();
     $db->select('karyawan', 'id, nik, nama, alamat, telp');
     $res=$db->getResult();
+    // print_r($res);
       if(count($res) == 0){
           echo "<b>Tidak ada data yang tersedia</b>";
       }else{
           foreach ($res as &$r){?>
           <tr>
-              <td><?php echo $r['id'] ?></td>
               <td><?php echo $r['nik'] ?></td>
               <td><?php echo $r['nama'] ?></td>
               <td><?php echo $r['alamat'] ?></td>

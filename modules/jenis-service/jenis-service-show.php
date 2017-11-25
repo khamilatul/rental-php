@@ -30,6 +30,10 @@ if(count($res) == 0){ ?>
 <table>
   <tbody>
     <tr>
+      <td width="200px">Kode Jenis Service :</td>
+      <td><?php echo $r['kode']; ?></td>
+    </tr>
+    <tr>
       <td>Nama Jenis Service :</td>
       <td><?php echo $r['nama']; ?></td>
     </tr>

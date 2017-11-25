@@ -29,7 +29,11 @@ if(count($res) == 0){ ?>
 ?>
 <table>
   <tbody>
-  <tr>
+<tr>
+  <td width="200px">NIP :</td>
+  <td><?php echo $r['nip']; ?></td>
+</tr>
+<tr>
   <td>No KTP :</td>
   <td><?php echo $r['no_ktp']; ?></td>
 </tr>

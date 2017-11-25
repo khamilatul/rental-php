@@ -18,6 +18,17 @@ if(count($res) == 0){
 </ul>
 </nav>
 <form action="" method="post">
+ <!-- field nip -->
+ <div class="grid-x grid-padding-x">
+    <div class="small-3 cell">
+      <label for="nip" class="text-right middle">NIP</label>
+    </div>
+    <div class="small-6 cell">
+      <input type="hidden" name="id" value="<?php echo $r['id']; ?>">
+      <input type="text" name="nip" placeholder="NIP" value="<?php echo $r['nip']; ?>" readonly>
+    </div>
+  </div>
+
  <!-- field no_ktp -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">

@@ -19,6 +19,17 @@ if(count($res) == 0){
 </nav>
 <form action="" method="post">
 
+<!-- field NIS -->
+<div class="grid-x grid-padding-x">
+    <div class="small-3 cell">
+      <label for="nis" class="text-right middle">NIS</label>
+    </div>
+    <div class="small-6 cell">
+      <input type="hidden" name="id" value="<?php echo $r['id']; ?>">
+      <input type="text" name="nis" placeholder="NIS" value="<?php echo $r['nis']; ?>" readonly>
+    </div>
+  </div>
+
   <!-- field nama -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">

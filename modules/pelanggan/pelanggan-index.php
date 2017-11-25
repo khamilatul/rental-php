@@ -10,7 +10,7 @@
   <table>
         <thead>
           <tr>
-		      <th>No</th>
+		      <th>No Pelanggan</th>
 		      <th>Nomor KTP </th>
 		      <th>Nama Pelanggan</th>
 		      <th>Alamat Pelanggan</th>
@@ -21,14 +21,14 @@
     <?php
     require_once("database.php");
     $db=new Database();
-    $db->select('pelanggan', 'id,no_ktp, nama, alamat, telp');
+    $db->select('pelanggan', 'id,nip,no_ktp, nama, alamat, telp');
     $res=$db->getResult();
       if(count($res) == 0){
           echo "<b>Tidak ada data yang tersedia</b>";
       }else{
           foreach ($res as &$r){?>
           <tr>
-              <td><?php echo $r['id'] ?></td>
+              <td><?php echo $r['nip'] ?></td>
               <td><?php echo $r['no_ktp'] ?></td>
               <td><?php echo $r['nama'] ?></td>
               <td><?php echo $r['alamat'] ?></td>

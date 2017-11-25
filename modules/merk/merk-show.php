@@ -30,7 +30,7 @@ if(count($res) == 0){ ?>
 <table>
   <tbody>
     <tr>
-      <td>Kode Merk :</td>
+      <td width="200px">Kode Merk :</td>
       <td><?php echo $r['kode_merk']; ?></td>
     </tr>
     <tr>

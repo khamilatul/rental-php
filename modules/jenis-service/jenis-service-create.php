@@ -1,3 +1,4 @@
+<?php require_once("database.php"); ?>
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
@@ -34,14 +35,13 @@
 </form>
 
 <?php 
-require_once("database.php");
 
 // check action submit
 if(isset($_POST['submit'])){
 $id = $_POST['id'];
 $nama = $_POST['nama'];
   $db=new Database();
-  $db->insert('jenis_service',array('id'=>$id, 'nama'=>$nama));
+  $db->insert('jenis_service',array('id'=>$id,'nama'=>$nama));
   $res=$db->getResult();
   // redirect to list
   header('Location: /rental/index.php?module=jenis-service');

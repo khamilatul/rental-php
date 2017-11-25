@@ -29,9 +29,9 @@ if(count($res) == 0){ ?>
 ?>
 <table>
   <tbody>
-  <tr>
-  <td>Kode Sopir :</td>
-  <td><?php echo $r['id']; ?></td>
+<tr>
+  <td>NIS :</td>
+  <td><?php echo $r['nis']; ?></td>
 </tr>
 <tr>
   <td>Nama Sopir :</td>

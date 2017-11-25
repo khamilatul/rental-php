@@ -18,6 +18,7 @@ if(count($res) == 0){
 </ul>
 </nav>
 <form action="" method="post">
+
   <!-- field nama -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
@@ -28,6 +29,7 @@ if(count($res) == 0){
       <input type="text" name="nama" placeholder="Nama Jenis Service" value="<?php echo $r['nama']; ?>" required>
     </div>
   </div>
+
   <!-- Aksi -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">

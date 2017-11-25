@@ -17,7 +17,7 @@
           <?php
     require_once("database.php");
     $db=new Database();
-    $db->select('jenis_service', 'id, nama');
+    $db->select('jenis_service', 'id, kode, nama');
     $res=$db->getResult();
       if(count($res) == 0){
           echo "<b>Tidak ada data yang tersedia</b>";

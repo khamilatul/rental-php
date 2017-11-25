@@ -1,3 +1,4 @@
+<?php require_once("database.php"); ?>
 <nav aria-label="You are here:" role="navigation">
 <ul class="breadcrumbs">
   <li>
@@ -7,6 +8,23 @@
 </ul>
 </nav>
 <form action="" method="post">
+
+<!-- field NIS -->
+<div class="grid-x grid-padding-x">
+  <div class="small-3 cell">
+    <label for="nis" class="text-right middle">NIS</label>
+  </div>
+  <div class="small-6 cell">
+  <?php
+    $db = new Database();
+    $db->selectMax('sopir','id');
+    $res = $db->getResult();
+    $nis = $res[0]['max'] < 1 ? $res[0]['max']+1  : $res[0]['max']+1;
+    $value = 'SPR00'.$nis;
+    echo "<input type='text' name='nis' value='$value' placeholder='NIS' readonly>";
+  ?>
+  </div>
+</div>
 
 <!-- field nama -->
 <div class="grid-x grid-padding-x">
@@ -74,17 +92,17 @@
 </form>
 
 <?php 
-require_once("database.php");
 
 // check action submit
 if(isset($_POST['submit'])){
+$nis = $_POST['nis'];
 $nama = $_POST['nama'];
 $alamat = $_POST['alamat'];
 $telp = $_POST['telp'];
 $no_sim = $_POST['no_sim'];
 $tarif_perjam = $_POST['tarif_perjam'];
   $db=new Database();
-  $db->insert('sopir',array('nama'=>$nama, 'alamat'=>$alamat, 'telp'=>$telp, 'no_sim'=>$no_sim, 'tarif_perjam'=>$tarif_perjam));
+  $db->insert('sopir',array('nis'=>$nis, 'nama'=>$nama, 'alamat'=>$alamat, 'telp'=>$telp, 'no_sim'=>$no_sim, 'tarif_perjam'=>$tarif_perjam));
   $res=$db->getResult();
   // print_r($res);
   // redirect to list

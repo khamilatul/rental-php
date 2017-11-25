@@ -19,7 +19,8 @@
                         <li id="service"><a href="?module=service" aria-label="service">Service</a></li>
                         <li id="setoran"><a href="?module=setoran" aria-label="setoran">Setoran</a></li>
                         <li id="type"><a href="?module=type" aria-label="type">Type</a></li>
-                        <li id="transaski-sewa"><a href="?module=transaksi-sewa" aria-label="transaksi-sewa">Transaksi Sewa</a></li>
+                        <li id="rental-pelanggan"><a href="?module=rental-pelanggan" aria-label="type">Transaksi Sewa</a></li>
+                        <!-- <li id="transaski-sewa"><a href="?module=transaksi-sewa" aria-label="transaksi-sewa">Transaksi Sewa</a></li> -->
                 </ul>
                 </li>
                 <li><a href="#">Laporan</a>

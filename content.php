@@ -200,6 +200,43 @@ switch($module) {
          include 'modules/transaksi-sewa/transaksi-sewa-show.php';
      break;  
 
+      // Module Rental Bengkel
+      case 'rental-bengkel':
+      include 'modules/rental-bengkel/rental-bengkel-index.php';
+      break;
+      case 'rental-bengkel-create':
+          include 'modules/rental-bengkel/rental-bengkel-create.php';
+      break;
+      case 'rental-bengkel-edit':
+          include 'modules/rental-bengkel/rental-bengkel-edit.php';
+      break;
+      case 'rental-bengkel-delete':
+          include 'modules/rental-bengkel/rental-bengkel-delete.php';
+      break;
+      case 'rental-bengkel-show':
+          include 'modules/rental-bengkel/transaksi-sewa-show.php';
+      break;
+      
+      // Module Rental Pelanggan
+      case 'rental-pelanggan':
+      include 'modules/rental-pelanggan/rental-pelanggan-index.php';
+      break;
+      case 'rental-pelanggan-create':
+          include 'modules/rental-pelanggan/rental-pelanggan-create.php';
+      break;
+      case 'rental-pelanggan-edit':
+          include 'modules/rental-pelanggan/rental-pelanggan-edit.php';
+      break;
+      case 'rental-pelanggan-delete':
+          include 'modules/rental-pelanggan/rental-pelanggan-delete.php';
+      break;
+      case 'rental-pelanggan-show':
+          include 'modules/rental-pelanggan/rental-pelanggan-show.php';
+      break;
+      case 'rental-pelanggan-kembali':
+      include 'modules/rental-pelanggan/rental-pelanggan-kembali.php';
+  break;
+
     // Jika module tidak ditemukan maka di redirect ke home 
     default: include'home.php';  
 }
