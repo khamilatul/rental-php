@@ -11,7 +11,7 @@
 <table>
     <thead>
         <tr>
-            <th>ID</th>
+            <!-- <th>ID</th> -->
             <th>Tanggal Setoran</th>
             <th>Jumlah Setoran</th>
             <th>ID Pemilik</th>
@@ -34,7 +34,7 @@
       }else{
           foreach ($res as &$r){?>
           <tr>
-              <td><?php echo $r['id'] ?></td>
+              <!-- <td><?php echo $r['id'] ?></td> -->
               <td><?php echo $r['tgl'] ?></td>
               <td><?php echo $r['jumlah'] ?></td>
               <td><?php echo $r['nama'] ?></td>

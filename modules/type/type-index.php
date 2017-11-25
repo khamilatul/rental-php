@@ -11,7 +11,7 @@
   <table>
       <thead>
           <tr>
-		      <th>ID</th>
+		      <!-- <th>ID</th> -->
 		      <th>Nama Type</th>
 		      <th>ID merk</th>
 		      <th>Aksi</th>
@@ -30,7 +30,7 @@
       }else{
           foreach ($res as &$r){?>
           <tr>
-              <td><?php echo $r['id'] ?></td>
+              <!-- <td><?php echo $r['id'] ?></td> -->
               <td><?php echo $r['nama'] ?></td>
               <td><?php echo $r['merk'] ?></td>
               <td>

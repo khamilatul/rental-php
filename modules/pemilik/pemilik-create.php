@@ -13,12 +13,19 @@ require_once("database.php");
 
 <!-- field kode -->
 <div class="grid-x grid-padding-x">
-  <div class="small-3 cell">
-    <label for="kode" class="text-right middle">Kode Pemilik</label>
-  </div>
-  <div class="small-6 cell">
-    <input type="text" name="kode" placeholder="Kode Pemilik" required>
-  </div>
+<div class="small-3 cell">
+  <label for="kode" class="text-right middle">Kode Pemilik </label>
+</div>
+<div class="small-6 cell">
+<?php
+  $db = new Database();
+  $db->selectMax('pemilik','id');
+  $res = $db->getResult();
+  $kode = $res[0]['max'] < 1 ? $res[0]['max']+1  : $res[0]['max']+1;
+  $value = 'PMLK000'.$kode;
+  echo "<input type='text' name='kode' value='$value' placeholder='Kode Pemilik' readonly>";
+?>
+</div>
 </div>
 
 <!-- field nama -->
@@ -86,15 +93,15 @@ require_once("database.php");
 
 // check action submit
 if(isset($_POST['submit'])){
-$id = $_POST['id'];
 $kode = $_POST['kode'];
 $nama = $_POST['nama'];
 $alamat = $_POST['alamat'];
 $telp = $_POST['telp'];
 $kendaraan_id = $_POST['kendaraan_id'];
   $db=new Database();
-  $db->insert('pemilik',array('id'=>$id, 'kode'=>$kode, 'nama'=>$nama, 'alamat'=>$alamat, 'telp'=>$telp, 'kendaraan_id'=>$kendaraan_id));
+  $db->insert('pemilik',array('kode'=>$kode, 'nama'=>$nama, 'alamat'=>$alamat, 'telp'=>$telp, 'kendaraan_id'=>$kendaraan_id));
   $res=$db->getResult();
+  // print_r($kode);
   // redirect to list
   header('Location: /rental/index.php?module=pemilik');
 }

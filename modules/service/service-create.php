@@ -13,12 +13,19 @@ require_once("database.php");
 
 <!-- field kode_service -->
 <div class="grid-x grid-padding-x">
-  <div class="small-3 cell">
-    <label for="kode_service" class="text-right middle">Kode Service</label>
-  </div>
-  <div class="small-6 cell">
-    <input type="text" name="kode_service" placeholder="Kode Service" required>
-  </div>
+<div class="small-3 cell">
+  <label for="kode_service" class="text-right middle">kode_service </label>
+</div>
+<div class="small-6 cell">
+<?php
+  $db = new Database();
+  $db->selectMax('service','id');
+  $res = $db->getResult();
+  $kode_service = $res[0]['max'] < 1 ? $res[0]['max']+1  : $res[0]['max']+1;
+  $value = 'KDS000'.$kode_service;
+  echo "<input type='text' name='kode_service' value='$value' placeholder='kode_service' readonly>";
+?>
+</div>
 </div>
 
 <!-- field tgl -->

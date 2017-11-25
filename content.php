@@ -199,23 +199,6 @@ switch($module) {
      case 'transaksi-sewa-show':
          include 'modules/transaksi-sewa/transaksi-sewa-show.php';
      break;  
-
-      // Module Rental Bengkel
-      case 'rental-bengkel':
-      include 'modules/rental-bengkel/rental-bengkel-index.php';
-      break;
-      case 'rental-bengkel-create':
-          include 'modules/rental-bengkel/rental-bengkel-create.php';
-      break;
-      case 'rental-bengkel-edit':
-          include 'modules/rental-bengkel/rental-bengkel-edit.php';
-      break;
-      case 'rental-bengkel-delete':
-          include 'modules/rental-bengkel/rental-bengkel-delete.php';
-      break;
-      case 'rental-bengkel-show':
-          include 'modules/rental-bengkel/transaksi-sewa-show.php';
-      break;
       
       // Module Rental Pelanggan
       case 'rental-pelanggan':

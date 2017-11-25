@@ -10,7 +10,7 @@
   <table>
       <thead>
           <tr>
-		      <th>No</th>
+		      <!-- <th>No</th> -->
               <th>Kode Service</th>
 		      <th>Tanggal Service</th>
 		      <th>Biaya Service</th>
@@ -33,7 +33,6 @@
       }else{
           foreach ($res as &$r){?>
           <tr>
-              <td><?php echo $r['id'] ?></td>
               <td><?php echo $r['kode_service'] ?></td>
               <td><?php echo $r['tgl'] ?></td>
               <td><?php echo $r['biaya'] ?></td>

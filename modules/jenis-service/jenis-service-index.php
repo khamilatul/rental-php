@@ -17,7 +17,7 @@
           <?php
     require_once("database.php");
     $db=new Database();
-    $db->select('jenis_service', 'id, kode, nama');
+    $db->select('jenis_service', 'id, nama');
     $res=$db->getResult();
       if(count($res) == 0){
           echo "<b>Tidak ada data yang tersedia</b>";
@@ -25,7 +25,6 @@
           foreach ($res as &$r){?>
           <tr>
               <td><?php echo $r['nama'] ?></td>
-
               <td>
                   <div class="small button-group">
                       <a href="?module=jenis-service-show&id=<?php echo $r['id']; ?>" class=" button">View</a>

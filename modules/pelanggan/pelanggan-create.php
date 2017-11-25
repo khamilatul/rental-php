@@ -30,7 +30,7 @@ require_once("database.php");
 <!-- field NO KTP -->
 <div class="grid-x grid-padding-x">
   <div class="small-3 cell">
-    <label for="no_ktp" class="text-right middle">No KTP</label>
+    <label for="no_ktp" class="text-right middle">NO KTP</label>
   </div>
   <div class="small-6 cell">
     <input type="text" name="no_ktp" placeholder="NO KTP" required>

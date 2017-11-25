@@ -10,7 +10,7 @@
   <table>
       <thead>
           <tr>
-		      <th>No</th>
+		      <!-- <th>No</th> -->
 		      <th>Kode Merk</th>
 		      <th>Nama Merk</th>
 		      <th>Aksi</th>
@@ -26,7 +26,7 @@
       }else{
           foreach ($res as &$r){?>
           <tr>
-              <td><?php echo $r['id'] ?></td>
+              <!-- <td><?php echo $r['id'] ?></td> -->
               <td><?php echo $r['kode_merk'] ?></td>
               <td><?php echo $r['nama'] ?></td>
               <td>

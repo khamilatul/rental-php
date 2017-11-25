@@ -10,7 +10,6 @@
   <table>
       <thead>
           <tr>
-		      <th>No Pemilik</th>
 		      <th>Kode Pemilik</th>
 		      <th>Nama Pemilik</th>
 		      <th>Alamat Pemilik</th>

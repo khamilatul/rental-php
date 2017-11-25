@@ -19,7 +19,7 @@ if(count($res) == 0){
 </nav>
 <form action="" method="post">
 
- <!-- field no -->
+ <!-- field no
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
       <label for="no" class="text-right middle">no</label>
@@ -28,7 +28,7 @@ if(count($res) == 0){
       <input type="hidden" name="id" value="<?php echo $r['id']; ?>">
       <input type="text" name="no" placeholder="no" value="<?php echo $r['no']; ?>" required>
     </div>
-  </div>
+  </div> -->
 
   <!-- field tgl -->
   <div class="grid-x grid-padding-x">
