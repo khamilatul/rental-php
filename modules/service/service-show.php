@@ -30,7 +30,7 @@ service.tgl,
 );
 $res= $db->getResult();
 if(count($res) == 0){ ?>
-  <table>
+  <table id="print-area">
     <tbody>
       <tr>
         <td>Data yang anda cari tidak ada atau terhapus</td>
@@ -40,7 +40,7 @@ if(count($res) == 0){ ?>
 <?php }else{
   foreach ($res as &$r){ 
 ?>
-<table>
+<table id="print-area">
   <tbody>
   <tr>
   <td>Kode service :</td>
@@ -64,7 +64,29 @@ if(count($res) == 0){ ?>
 </tr>
   </tbody>
 </table>
+<a class="button" href="javascript:printDiv('print-area');" >Print</a>
 <a href="?module=service-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
 <a class="button" href='javascript:self.history.back();'>Kembali</a>
 </div>
 <?php }}?>
+
+<style>
+@media print {
+   * { color: black; background: white; }
+   table { font-size: 80%; }
+}
+</style>
+
+<iframe id="printing-frame" name="print_frame" src="about:blank" style="display:none;"></iframe>
+
+<script type="text/javascript">
+     
+     function printDiv(elementId) {
+    var a = document.getElementById('print-area').value;
+    var b = document.getElementById(elementId).innerHTML;
+    window.frames["print_frame"].document.title = document.title;
+    window.frames["print_frame"].document.body.innerHTML = '<style>' + a + '</style>' + b;
+    window.frames["print_frame"].window.focus();
+    window.frames["print_frame"].window.print();
+}
+</script>

@@ -23,7 +23,7 @@
                         <!-- <li id="transaski-sewa"><a href="?module=transaksi-sewa" aria-label="transaksi-sewa">Transaksi Sewa</a></li> -->
                 </ul>
                 </li>
-                <li><a href="#">Laporan</a>
+                <!-- <li><a href="#">Laporan</a> -->
                 
                 </li>
             </ul>
