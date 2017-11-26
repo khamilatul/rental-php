@@ -14,7 +14,19 @@ ob_start();
 <?php
 $id=$_GET['id'];
 $db = new Database();
-$db->select('kendaraan','*','','','','', "id=$id");
+$db->select('kendaraan', 
+'kendaraan.id, 
+kendaraan.no_plat, 
+kendaraan.tahun , 
+kendaraan.tarif_perjam,
+kendaraan.status_rental, 
+type.nama','type ON type.id=kendaraan.type_id',
+'',
+'',
+'',
+"kendaraan.id=$id"
+);
+
 $res= $db->getResult();
 if(count($res) == 0){ ?>
   <table>
@@ -47,7 +59,7 @@ if(count($res) == 0){ ?>
     </tr>
     <tr>
       <td>Type ID :</td>
-      <td><?php echo $r['type_id']; ?></td>
+      <td><?php echo $r['nama']; ?></td>
     </tr>
   </tbody>
 </table>

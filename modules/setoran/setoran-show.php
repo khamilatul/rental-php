@@ -14,7 +14,20 @@ ob_start();
 <?php
 $id=$_GET['id'];
 $db = new Database();
-$db->select('setoran','*','','','','', "id=$id");
+$db->select('setoran', 
+'setoran.id, 
+setoran.tgl, 
+setoran.jumlah, 
+setoran.pemilik_id,
+pemilik.nama, 
+setoran.karyawan_id,
+karyawan.nama as karyawan',
+'pemilik ON pemilik.id=setoran.pemilik_id',
+'karyawan ON karyawan.id=setoran.karyawan_id',
+'',
+'',
+"setoran.id=$id"
+);
 $res= $db->getResult();
 if(count($res) == 0){ ?>
   <table>
@@ -29,10 +42,10 @@ if(count($res) == 0){ ?>
 ?>
 <table>
   <tbody>
-  <tr>
+  <!-- <tr>
   <td>Kode Setoran :</td>
   <td><?php echo $r['no']; ?></td>
-</tr>
+</tr> -->
 <tr>
   <td>Tanggal Setoran :</td>
   <td><?php echo $r['tgl']; ?></td>
@@ -43,11 +56,11 @@ if(count($res) == 0){ ?>
 </tr>
 <tr>
   <td>Pemilik ID :</td>
-  <td><?php echo $r['pemilik_id']; ?></td>
+  <td><?php echo $r['nama']; ?></td>
 </tr>
 <tr>
   <td>Karyawan ID :</td>
-  <td><?php echo $r['karyawan_id']; ?></td>
+  <td><?php echo $r['karyawan']; ?></td>
 </tr>
   </tbody>
 </table>

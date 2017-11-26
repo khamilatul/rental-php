@@ -14,7 +14,14 @@ ob_start();
 <?php
 $id=$_GET['id'];
 $db = new Database();
-$db->select('type','*','','','','', "id=$id");
+$db->select('type',
+'type.id, type.nama, type.merk_id, merk.nama as merk',
+'merk ON merk.id = type.merk_id',
+'',
+'',
+'',
+"type.id=$id"
+);
 $res= $db->getResult();
 if(count($res) == 0){ ?>
   <table>
@@ -39,7 +46,7 @@ if(count($res) == 0){ ?>
 </tr>
 <tr>
   <td>Merk ID :</td>
-  <td><?php echo $r['merk_id']; ?></td>
+  <td><?php echo $r['merk']; ?></td>
 </tr>
   </tbody>
 </table>

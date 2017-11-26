@@ -14,7 +14,19 @@ ob_start();
 <?php
 $id=$_GET['id'];
 $db = new Database();
-$db->select('pemilik','*','','','','', "id=$id");
+$db->select('pemilik',
+ 'pemilik.id, 
+  pemilik.kode,
+  pemilik.nama, 
+  pemilik.alamat, 
+  pemilik.telp, 
+  pemilik.kendaraan_id, kendaraan.no_plat',
+  'kendaraan ON kendaraan.id=pemilik.kendaraan_id',
+  '',
+  '',
+  '',
+  "pemilik.id=$id"
+  );
 $res= $db->getResult();
 if(count($res) == 0){ ?>
   <table>
@@ -47,7 +59,7 @@ if(count($res) == 0){ ?>
 </tr>
 <tr>
   <td>Kendaraan ID :</td>
-  <td><?php echo $r['kendaraan_id']; ?></td>
+  <td><?php echo $r['no_plat']; ?></td>
 </tr>
   </tbody>
 </table>

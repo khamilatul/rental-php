@@ -14,7 +14,20 @@ ob_start();
 <?php
 $id=$_GET['id'];
 $db = new Database();
-$db->select('service','*','','','','', "id=$id");
+$db->select('service', 
+'service.id, 
+service.kode_service, 
+service.tgl,
+ service.biaya,
+ service.kendaraan_id, 
+ kendaraan.no_plat, 
+ jenis_service.nama as jenis_service',
+'kendaraan ON kendaraan.id=service.kendaraan_id',
+'jenis_service ON jenis_service.id=service.jenis_service_id',
+'',
+'',
+"service.id=$id"
+);
 $res= $db->getResult();
 if(count($res) == 0){ ?>
   <table>
@@ -43,11 +56,11 @@ if(count($res) == 0){ ?>
 </tr>
 <tr>
   <td>Kendaraan ID :</td>
-  <td><?php echo $r['kendaraan_id']; ?></td>
+  <td><?php echo $r['no_plat']; ?></td>
 </tr>
 <tr>
   <td>Jenis Service ID :</td>
-  <td><?php echo $r['jenis_service_id']; ?></td>
+  <td><?php echo $r['jenis_service']; ?></td>
 </tr>
   </tbody>
 </table>
