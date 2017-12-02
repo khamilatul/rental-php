@@ -55,11 +55,11 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['jumlah']; ?></td>
 </tr>
 <tr>
-  <td>Pemilik ID :</td>
+  <td>Nama Pemilik :</td>
   <td><?php echo $r['nama']; ?></td>
 </tr>
 <tr>
-  <td>Karyawan ID :</td>
+  <td>Nama Karyawan :</td>
   <td><?php echo $r['karyawan']; ?></td>
 </tr>
   </tbody>

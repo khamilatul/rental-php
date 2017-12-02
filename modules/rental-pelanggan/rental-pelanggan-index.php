@@ -13,8 +13,8 @@
 		      <th>No Transaksi Sewa</th>
 		      <th>Tanggal Pesan</th>
               <th>Tanggal Pinjam </th>
-              <th>Kendaraan ID </th>
-              <th>Pelanggan ID </th>
+              <th>NO Plat Kendaraan </th>
+              <th>Nama Pelanggan </th>
 		      <th>Aksi</th>
 	      </tr>
     </thead>

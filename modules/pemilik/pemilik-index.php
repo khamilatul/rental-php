@@ -14,7 +14,7 @@
 		      <th>Nama Pemilik</th>
 		      <th>Alamat Pemilik</th>
               <th>Telepon Pemilik</th>
-		      <th>Kendaraan ID</th>
+		      <th>NO Plat Kendaraan</th>
 		      <th>Aksi</th>
 	      </tr>
      </thead>

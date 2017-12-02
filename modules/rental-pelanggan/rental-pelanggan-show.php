@@ -132,19 +132,19 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['biaya_BBM']; ?></td>
 </tr>
 <tr>
-  <td>Sopir ID :</td>
+  <td>Nama Sopir :</td>
   <td><?php echo $r['sopir']; ?></td>
 </tr>
 <tr>
-  <td>Kendaraan ID :</td>
+  <td>NO Plat Kendaraan :</td>
   <td><?php echo $r['kendaraan']; ?></td>
 </tr>
 <tr>
-  <td>Pelanggan ID :</td>
+  <td>Nama Pelanggan :</td>
   <td><?php echo $r['pelanggan']; ?></td>
 </tr>
 <tr>
-  <td>Karyawan ID :</td>
+  <td>Nama Karyawan :</td>
   <td><?php echo $r['karyawan']; ?></td>
 </tr>
   </tbody>

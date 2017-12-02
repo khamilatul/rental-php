@@ -58,7 +58,7 @@ if(count($res) == 0){ ?>
       <td><?php echo $r['status_rental']; ?></td>
     </tr>
     <tr>
-      <td>Type ID :</td>
+      <td>Nama Type :</td>
       <td><?php echo $r['nama']; ?></td>
     </tr>
   </tbody>

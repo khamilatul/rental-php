@@ -45,7 +45,7 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['nama']; ?></td>
 </tr>
 <tr>
-  <td>Merk ID :</td>
+  <td>Nama Merk :</td>
   <td><?php echo $r['merk']; ?></td>
 </tr>
   </tbody>

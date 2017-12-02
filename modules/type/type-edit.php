@@ -32,7 +32,7 @@ if(count($res) == 0){
   <!-- field merk_id -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="merk_id" class="text-right middle">Merk ID</label>
+      <label for="merk_id" class="text-right middle">Nama Merk</label>
     </div>
     <div class="small-6 cell">
       <select name="merk_id">

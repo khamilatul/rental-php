@@ -14,8 +14,8 @@
             <!-- <th>ID</th> -->
             <th>Tanggal Setoran</th>
             <th>Jumlah Setoran</th>
-            <th>ID Pemilik</th>
-            <th>ID Karyawan</th>
+            <th>Nama Pemilik</th>
+            <th>Nama Karyawan</th>
             <th>Aksi</th>
         </tr>
     </thead>

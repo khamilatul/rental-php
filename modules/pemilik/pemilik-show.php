@@ -58,7 +58,7 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['telp']; ?></td>
 </tr>
 <tr>
-  <td>Kendaraan ID :</td>
+  <td>NO Plat Kendaraan :</td>
   <td><?php echo $r['no_plat']; ?></td>
 </tr>
   </tbody>

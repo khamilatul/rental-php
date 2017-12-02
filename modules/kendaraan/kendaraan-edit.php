@@ -64,7 +64,7 @@ if(count($res) == 0){
   <!-- field type_id -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="type_id" class="text-right middle">Type ID</label>
+      <label for="type_id" class="text-right middle">Nama Type</label>
     </div>
     <div class="small-6 cell">
       <select name="type_id">

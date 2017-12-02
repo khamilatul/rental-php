@@ -53,7 +53,7 @@ if(count($res) == 0){
   <!-- field kendaraan_id -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="kendaraan_id" class="text-right middle">Kendaraan ID</label>
+      <label for="kendaraan_id" class="text-right middle">NO PlatKendaraan</label>
     </div>
     <div class="small-6 cell">
       <select name="kendaraan_id">
@@ -72,7 +72,7 @@ if(count($res) == 0){
   <!-- field jenis_service_id -->
   <div class="grid-x grid-padding-x">
     <div class="small-3 cell">
-      <label for="jenis_service_id" class="text-right middle">Jenis Service ID</label>
+      <label for="jenis_service_id" class="text-right middle">Nama Jenis Service</label>
     </div>
     <div class="small-6 cell">
       <select name="jenis_service_id">

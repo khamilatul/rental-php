@@ -20,6 +20,44 @@ if(count($res) == 0){
 </nav>
 <form action="" method="post">
 
+<!-- field kendaraan_id -->
+<div class="grid-x grid-padding-x">
+    <div class="small-3 cell">
+      <label for="kendaraan_id" class="text-right middle">NO Plat Kendaraan</label>
+    </div>
+    <div class="small-6 cell">
+      <select name="kendaraan_id">
+      <?php
+        $db = new Database();
+        $db->select('kendaraan','id, no_plat');
+        $kendaraans = $db->getResult();
+        foreach ($kendaraans as &$kendaraan){ 
+          $selected =$r['kendaraan_id'] == $kendaraan['id'] ? 'selected' : '';
+            echo "<option value=$kendaraan[id]  $selected > $kendaraan[no_plat] </option>";
+        }?>
+      </select>
+    </div>
+  </div>
+
+<!-- field pelanggan_id -->
+<div class="grid-x grid-padding-x">
+    <div class="small-3 cell">
+      <label for="pelanggan_id" class="text-right middle">Nama Pelanggan</label>
+    </div>
+    <div class="small-6 cell">
+      <select name="pelanggan_id">
+      <?php
+        $db = new Database();
+        $db->select('pelanggan','id, nama');
+        $pelanggans = $db->getResult();
+        foreach ($pelanggans as &$pelanggan){ 
+          $selected =$r['pelanggan_id'] == $pelanggan['id'] ? 'selected' : '';
+            echo "<option value=$pelanggan[id]  $selected > $pelanggan[nama] </option>";
+        }?>
+      </select>
+    </div>
+  </div>
+
  <!-- field tgl_kembali_realisasi -->
  <div class="grid-x grid-padding-x">
  <div class="small-3 cell">

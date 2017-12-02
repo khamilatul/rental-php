@@ -55,11 +55,11 @@ if(count($res) == 0){ ?>
   <td><?php echo $r['biaya']; ?></td>
 </tr>
 <tr>
-  <td>Kendaraan ID :</td>
+  <td>NO Plat Kendaraan :</td>
   <td><?php echo $r['no_plat']; ?></td>
 </tr>
 <tr>
-  <td>Jenis Service ID :</td>
+  <td>Nama Jenis Service :</td>
   <td><?php echo $r['jenis_service']; ?></td>
 </tr>
   </tbody>

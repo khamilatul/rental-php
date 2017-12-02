@@ -10,11 +10,11 @@
   <table>
       <thead>
           <tr>
-		      <th>No Plat</th>
+		      <th>Nomor Plat</th>
               <th>Tahun</th>
 		      <th>Tarif Perjam </th>
 		      <th>Status Rental</th>
-		      <th>Type id</th>
+		      <th>Nama Type</th>
 		      <th>Aksi</th>
 	      </tr>
         </thead>

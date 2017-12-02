@@ -14,8 +14,8 @@
               <th>Kode Service</th>
 		      <th>Tanggal Service</th>
 		      <th>Biaya Service</th>
-		      <th>ID Kendaraan</th>
-              <th>ID Jenis Service</th>
+		      <th>NO Plat Kendaraan</th>
+              <th>Nama Jenis Service</th>
 		      <th>Aksi</th>
 	      </tr>
       </thead>

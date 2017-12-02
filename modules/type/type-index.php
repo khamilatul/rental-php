@@ -13,7 +13,7 @@
           <tr>
 		      <!-- <th>ID</th> -->
 		      <th>Nama Type</th>
-		      <th>ID merk</th>
+		      <th>Nama merk</th>
 		      <th>Aksi</th>
 	      </tr>
       </thead>
