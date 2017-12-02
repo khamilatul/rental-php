@@ -54,7 +54,7 @@ require_once("database.php");
     <label for="jampinjam" class="text-right middle">Jam Pinjam</label>
   </div>
   <div class="small-6 cell">
-    <input type="time" name="tglpinjam" placeholder="Jam Pinjam" required>
+    <input type="time" name="jampinjam" placeholder="Jam Pinjam" required>
   </div>
 </div>
 
@@ -213,34 +213,46 @@ $jam_kembali_rencana = $_POST['jam_kembali_rencana'];
 $kilometer_pinjam = $_POST['kilometer_pinjam'];
 $BBM_pinjam = $_POST['BBM_pinjam'];
 $kondisi_mobil_pinjam = $_POST['kondisi_mobil_pinjam'];
-$biaya_BBM = $_POST['biaya_BBM'];
+// $biaya_BBM = $_POST['biaya_BBM'];
 $sopir_id = $_POST['sopir_id'];
 $kendaraan_id	 = $_POST['kendaraan_id'];
 $pelanggan_id = $_POST['pelanggan_id'];
 $karyawan_id = $_POST['karyawan_id'];
 
-  $db=new Database();
-  $db->insert('transaksisewa',array(
-    'no' => $_POST['no'],
-    'tglpesan' => $_POST['tglpesan'],
-    'tglpinjam' => $_POST['tglpinjam'],
-    'jampinjam' => $_POST['jampinjam'],
-    'tgl_kembali_rencana' => $_POST['tgl_kembali_rencana'],
-    'jam_kembali_rencana' => $_POST['jam_kembali_rencana'],
-    'kilometer_pinjam' => $_POST['kilometer_pinjam'],
-    'BBM_pinjam' => $_POST['BBM_pinjam'],
-    'kondisi_mobil_pinjam' => $_POST['kondisi_mobil_pinjam'],
-    'biaya_BBM' => $_POST['biaya_BBM'],
-    'sopir_id' => $_POST['sopir_id'],
-    'kendaraan_id' =>$_POST['kendaraan_id'],
-    'pelanggan_id' => $_POST['pelanggan_id'],
-    'karyawan_id' => $_POST['karyawan_id'],
-  ));
-  $res=$db->getResult();
-  // print_r($res);
-  // redirect to list
-    header('Location: /rental/index.php?module=rental-pelanggan');
-    exit();
+  // select transaksisewa where pelanggan_id=$pelanggan_id
+  // jika tgl kembali ada maka boleh dipinjam lagi
+  // jika idak maka muncul notifikasi bahwa dia belum mengembalikan
+  $cek=new Database();
+  $cek->select('transaksisewa', 'kembali','','','','',"pelanggan_id=$pelanggan_id AND kembali=0");
+
+  $result = $cek->getOne();
+
+  if($result) {
+    echo "<script>alert('Orang ini belum yes')</script>";
+  } else {
+    $db=new Database();
+    $db->insert('transaksisewa',array(
+      'no' => $_POST['no'],
+      'tglpesan' => $_POST['tglpesan'],
+      'tglpinjam' => $_POST['tglpinjam'],
+      'jampinjam' => $_POST['jampinjam'],
+      'tgl_kembali_rencana' => $_POST['tgl_kembali_rencana'],
+      'jam_kembali_rencana' => $_POST['jam_kembali_rencana'],
+      'kilometer_pinjam' => $_POST['kilometer_pinjam'],
+      'BBM_pinjam' => $_POST['BBM_pinjam'],
+      'kondisi_mobil_pinjam' => $_POST['kondisi_mobil_pinjam'],
+      'sopir_id' => $_POST['sopir_id'],
+      'kendaraan_id' =>$_POST['kendaraan_id'],
+      'pelanggan_id' => $_POST['pelanggan_id'],
+      'karyawan_id' => $_POST['karyawan_id'],
+    ));
+    $res=$db->getResult();
+    // print_r($res);
+    // redirect to list
+      header('Location: /rental/index.php?module=rental-pelanggan');
+      exit();
+  }
+
   
 }
 ?>

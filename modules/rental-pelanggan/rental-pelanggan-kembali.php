@@ -194,6 +194,7 @@ if(isset($_POST['submit'])){
     'kerusakan' => $kerusakan,
     'biaya_kerusakan' => $biaya_kerusakan,
     'biaya_BBM' => $biaya_BBM,
+    'kembali' => 1,
   ),
     "id=$id"
   );
