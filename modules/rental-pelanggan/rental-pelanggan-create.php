@@ -228,7 +228,7 @@ $karyawan_id = $_POST['karyawan_id'];
   $result = $cek->getOne();
 
   if($result) {
-    echo "<script>alert('Orang ini belum yes')</script>";
+    echo "<script>alert('Kembalikan mobilnya dulu dong gaess')</script>";
   } else {
     $db=new Database();
     $db->insert('transaksisewa',array(

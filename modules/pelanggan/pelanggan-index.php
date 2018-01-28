@@ -6,7 +6,8 @@
         </ul>
     </nav>
       <div class="grid-x grid-margin-x">
-<a href="?module=pelanggan-create" class="small button">Create</a>
+        <a href="?module=pelanggan-create" class="small button">Create</a>
+        <a href="/rental/export-csv.php?table=pelanggan" class="small button">Export to CSV</a>
   <table>
         <thead>
           <tr>

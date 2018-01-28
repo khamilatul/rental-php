@@ -43,6 +43,7 @@
               <td>
                   <div class="small button-group">
                       <a href="?module=rental-pelanggan-kembali&id=<?php echo $r['id']; ?>" class=" button">Pengembalian</a>
+                      <a href="?module=rental-pelanggan-export&id=<?php echo $r['id']; ?>" class=" button">Export to CSV</a>
                       <a href="?module=rental-pelanggan-show&id=<?php echo $r['id']; ?>" class=" button">View</a>
                       <a href="?module=rental-pelanggan-edit&id=<?php echo $r['id']; ?>" class="secondary button">Edit</a>
                       <a href="?module=rental-pelanggan-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
