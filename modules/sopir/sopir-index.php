@@ -6,7 +6,8 @@
   </ul>
 </nav>
 <div class="grid-x grid-margin-x">
-<a href="?module=sopir-create" class="small button">Create</a>
+    <a href="?module=sopir-create" class="small button">Create</a>
+    <a href="/rental/export-csv.php?table=sopir" class="small button">Export to CSV</a>
   <table>
       <thead>
           <tr>

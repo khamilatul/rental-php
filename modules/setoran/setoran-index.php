@@ -7,7 +7,7 @@
 </nav>
 <div class="grid-x grid-margin-x">
     <a href="?module=setoran-create" class="small button">Create</a>
-	
+    <a href="/rental/export-csv.php?table=setoran" class="small button">Export to CSV</a>
 <table>
     <thead>
         <tr>

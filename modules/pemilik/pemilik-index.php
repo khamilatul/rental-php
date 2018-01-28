@@ -6,7 +6,8 @@
   </ul>
 </nav>
 <div class="grid-x grid-margin-x">
-<a href="?module=pemilik-create" class="small button">Create</a>
+    <a href="?module=pemilik-create" class="small button">Create</a>
+    <a href="/rental/export-csv.php?table=pemilik" class="small button">Export to CSV</a>
   <table>
       <thead>
           <tr>

@@ -6,8 +6,25 @@
         </ul>
     </nav>
       <div class="grid-x grid-margin-x">
+        <form class="form-horizontal" action="/rental/import-csv.php?table=pelanggan" method="post" name="upload_excel" enctype="multipart/form-data">
+            <fieldset>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <input type="file" name="file" id="file" class="input-large">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <button type="submit" id="submit" name="Import" class="small button" data-loading-text="Loading...">Import</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+      </div>
+      <div class="grid-x grid-margin-x">
         <a href="?module=pelanggan-create" class="small button">Create</a>
         <a href="/rental/export-csv.php?table=pelanggan" class="small button">Export to CSV</a>
+
   <table>
         <thead>
           <tr>
