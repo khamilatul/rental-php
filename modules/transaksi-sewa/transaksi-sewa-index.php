@@ -7,7 +7,7 @@
 </nav>
 <div class="grid-x grid-margin-x">
     <a href="?module=transaksi-sewa-create" class="small button">Create</a>
-    <a href="/rental/export-csv.php?table=transaksi_sewa" class="small button">Export to CSV</a>
+    <a href="/rental/export-csv.php?table=transaksisewa" class="small button">Export to CSV</a>
   <table>
       <thead>
           <tr>

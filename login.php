@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -31,6 +34,14 @@
             </div>
             <div class="small-8 cell">
               <input type="password" name="password" placeholder="Password" required>
+            </div>
+          </div>
+
+
+          <div class="grid-x grid-padding-x">
+            <div class="small-5 cell">
+              <img src="captcha.php" class="captcha"><br>
+				        <input type="text" name="captcha" placeholder="captcha code" class="inputan" required><br>
             </div>
           </div>
 
@@ -72,7 +83,7 @@ if(isset($_POST['submit'])){
   $db->select('login','*','','','','',"username='$username' AND password='$password'");
   $res=$db->getResult();
   var_dump($res[0]);
-  if($res[0] > 0){
+  if($res[0] > 0 && $_SESSION['captcha'] == $_POST['captcha']){
     session_start();
     $_SESSION['username'] = $username;
     $_SESSION['status'] = "login";

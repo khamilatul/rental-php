@@ -136,12 +136,18 @@ if($query->num_rows > 0){
                case 'transaksi_sewa';
                //set column headers
                $fields = array('ID', 'no', 'tglpesan', 'jumlah', 'tglpinjam', 'jampinjam','tgl_kembali_rencana','jam_kembali_rencana',
-                                'tgl_kembali_realisasi', 'jam_kembali_realisasi');
+                                'tgl_kembali_realisasi', 'jam_kembali_realisasi', 'denda', 'kilometer_pinjam', 'kilometer_kembali',
+                                'BBM_pinjam', 'BBM_kembali', 'kondisi_mobil_pinjam', 'kondisi_mobil_kembali', 'kerusakan', 'biaya_kerusakan',
+                                'biaya_BBM', 'sopir_id', 'kendaraan_id', 'pelanggan_id', 'karyawan_id');
                fputcsv($f, $fields, $delimiter);
                
                //output each row of the data, format line as csv and write to file pointer
                while($row = $query->fetch_assoc()){
-                   $lineData = array($row['id'], $row['no'], $row['tglpesan'],  $row['jumlah'],  $row['pemilik_id'], $row['karyawan_id']);
+                   $lineData = array($row['id'], $row['no'], $row['tglpesan'],  $row['jumlah'],  
+                                        $row['tglpinjam'], $row['jampinjam'], $row['tgl_kembali_rencana'], $row['jam_kembali_rencana'],$row['tgl_kembali_realisasi'],
+                                        $row['jam_kembali_realisasi'], $row['denda'], $row['kilometer_pinjam'], $row['kilometer_kembali'], $row['BBM_pinjam'],
+                                        $row['BBM_kembali'], $row['kondisi_mobil_pinjam'], $row['kondisi_mobil_kembali'], $row['kerusakan'], $row['biaya_kerusakan'],
+                                        $row['biaya_BBM'], $row['sopir_id'], $row['kendaraan_id'],$row['pelanggan_id'], $row['karyawan_id'] );
                    fputcsv($f, $lineData, $delimiter);
                }
                 // code
