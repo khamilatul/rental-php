@@ -130,20 +130,8 @@ require_once("database.php");
   
 <!-- field kendaraan_id -->
 <div class="grid-x grid-padding-x">
-  <div class="small-3 cell">
-    <label for="kendaraan_id" class="text-right middle">NO Plat Kendaraan</label>
-  </div>
   <div class="small-6 cell">
-  <select name="kendaraan_id">
-  <?php
-    $db = new Database();
-    $db->select('kendaraan','id, no_plat');
-    $res = $db->getResult();
-    foreach ($res as &$r){
-      echo "<option value=$r[id]>$r[no_plat]</option>";
-    }    
-  ?>
-  </select>
+  <input type="hidden" name="kendaraan_id" value="<?php echo $_GET['kendaraan_id']?>" placeholder="Biaya BBM" readonly>
   </div>
   </div>
 
@@ -248,6 +236,14 @@ $karyawan_id = $_POST['karyawan_id'];
     ));
     $res=$db->getResult();
     // print_r($res);
+    $kendaraan_id = $_GET['kendaraan_id'];
+    // update status kendaraan dengan value Tidak ada
+    $db->update('kendaraan',array(
+      'status_rental'=>'Tidak Ada'
+    ),
+      "id=$kendaraan_id"
+    ); 
+
     // redirect to list
       header('Location: /rental/index.php?module=rental-pelanggan');
       exit();

@@ -175,6 +175,7 @@ if(isset($_POST['submit'])){
   $tgl_kembali_realisasi = $_POST['tgl_kembali_realisasi'];
   $jam_kembali_realisasi = $_POST['jam_kembali_realisasi'];
   $denda = $_POST['denda'];
+  $kendaraan_id = $_POST['kendaraan_id'];
   $kilometer_kembali = $_POST['kilometer_kembali'];
   $BBM_kembali = $_POST['BBM_kembali'];
   $kondisi_mobil_kembali = $_POST['kondisi_mobil_kembali'];
@@ -200,6 +201,14 @@ if(isset($_POST['submit'])){
   );
   $res = $db->getResult();
   // print_r($res);
+
+  // update kembali dengan value ada
+  $db->update('kendaraan',array(
+    'status_rental'=>'Ada'
+  ),
+    "id=$kendaraan_id"
+  ); 
+
   header('Location: /rental/index.php?module=rental-pelanggan');
 }
 

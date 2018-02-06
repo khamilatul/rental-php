@@ -15,7 +15,8 @@ ob_start();
 $id=$_GET['id'];
 $db = new Database();
 $db->select('kendaraan', 
-'kendaraan.id, 
+'kendaraan.id,
+kendaraan.image, 
 kendaraan.no_plat, 
 kendaraan.tahun , 
 kendaraan.tarif_perjam,
@@ -61,9 +62,14 @@ if(count($res) == 0){ ?>
       <td>Nama Type :</td>
       <td><?php echo $r['nama']; ?></td>
     </tr>
+    <tr>
+      <td>Gambar :</td>
+      <td><img src="<?php echo $r['image'] ?>" width="200px" height="200px" /></td>
+    </tr>
   </tbody>
 </table>
 <a href="?module=kendaraan-delete&id=<?php echo $r['id']; ?>"onClick='return confirm("Apakah yakin menghapus?")' class="alert button">Delete</a>
 <a class="button" href='javascript:self.history.back();'>Kembali</a>
+<a class="button" href="?module=rental-pelanggan-create&kendaraan_id=<?php echo $r['id']; ?>">Sewa</a>
 </div>
 <?php }}?>
