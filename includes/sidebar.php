@@ -2,7 +2,8 @@
         <div class="sticky" data-sticky data-anchor="content">
             <ul class="vertical menu">
                 <li>
-                    <li id="home"><a href="/rental" aria-label="Home">Home</a></li>
+                    <li id="home"><a href="?module=home" aria-label="Home">Home</a></li>
+                    <li id="laporan"><a href="?module=laporan" aria-label="laporan">Status Mobil Pinjaman</a></li>
                     <a href="#">Master</a>
                     <ul class="nested vertical menu">
                         <li id="pelanggan"><a href="?module=pelanggan" aria-label="pelanggan">Pelanggan</a></li>

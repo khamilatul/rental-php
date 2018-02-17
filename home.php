@@ -1,8 +1,17 @@
 <h2> HOME </h2>
 
 <div class="grid-container">
+<div class="grid-x grid-padding-x">
+  <div class="small-6 cell">
+      <form action="" method="get">
+    <input type="text" name="q" placeholder="Cari berdasarkan nama...">
+</form>
+  </div>
+</div>
 <?php
+
     require_once("database.php");
+    $search = empty($_GET['q']) ? '' : $_GET['q'];
     $db=new Database();
     $db->select('kendaraan', 
 'kendaraan.id,
@@ -15,7 +24,8 @@ type.nama','type ON type.id=kendaraan.type_id',
 '',
 '',
 '',
-"kendaraan.status_rental='Ada'"
+"kendaraan.status_rental='Ada'",
+"type.nama LIKE '$search%'"
 );
     $res=$db->getResult();
       if(count($res) == 0){
@@ -32,7 +42,10 @@ type.nama','type ON type.id=kendaraan.type_id',
                 </div>
                 <div class="media-object-section">
                     <h4><?php echo $r['nama'] ?></h4>
-                    <p>Shrink the browser width to see me stack. I do tricks for dog treats, but I'm not a dog.</p>
+                    <p>Sewa mobil Starlet,Brio,Avanza dll gratis ongkos sopir.
+                       <br>Harga mulai 300 ribu/hari. 
+                       <br>Hub:ABC Rent Car di Jl.Cuka 12B Kepanjen Malang.
+                       <br>Telp: 021-34576</p>
                 </div>
             </div>
 <?php

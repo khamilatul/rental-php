@@ -9,6 +9,11 @@ switch($module) {
     include 'home.php';
     break;
 
+    // Module Laporan
+    case 'laporan':
+    include 'laporan.php';
+    break;
+
     // Module Pelanggan
     case 'pelanggan':
         include 'modules/pelanggan/pelanggan-index.php';

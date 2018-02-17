@@ -89,7 +89,7 @@ class Database {
 	}
 	
 	// Function to SELECT from the database
-	public function select($table, $rows = '*', $join = null,$join2 = null,$join3 = null,$join4 = null, $where = null, $order = null, $limit = null){
+	public function select($table, $rows = '*', $join = null,$join2 = null,$join3 = null,$join4 = null, $where = null,$like = null, $order = null, $limit = null){
 		// Create query from the variables passed to the function
 		$q = 'SELECT '.$rows.' FROM '.$table;
 		if($join != null){
@@ -106,6 +106,9 @@ class Database {
 		}
         if($where != null){
         	$q .= ' WHERE '.$where;
+		}
+        if($like != null){
+        	$q .= ' AND '.$like;
 		}
         if($order != null){
             $q .= ' ORDER BY '.$order;
